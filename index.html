@@ -21,6 +21,192 @@
 </head>
 <body>
 
+
+
+  <!-- ===================== SCHOOL PAGE LOADER ===================== -->
+<div id="schoolPageLoader">
+  <div class="school-loader-bg"></div>
+
+  <div class="school-loader-content">
+    <!-- Logo / Initial -->
+    <div class="school-loader-logo">
+      <span>BFA</span>
+    </div>
+
+    <!-- School Name -->
+    <h1 class="school-loader-title">
+      Bright Future Academy
+    </h1>
+
+    <!-- Motivational Line -->
+    <p class="school-loader-tagline">
+      “Shaping Bright Minds for Tomorrow”
+    </p>
+
+    <!-- Animated Progress -->
+    <div class="school-loader-progress">
+      <div class="school-loader-bar"></div>
+    </div>
+  </div>
+</div>
+
+<style>
+  :root {
+    --school-primary: #123c7a;
+    --school-primary-dark: #0d2c5d;
+    --school-secondary: #1d65c1;
+    --school-accent: #f4b942;
+    --school-text: #1b2b45;
+  }
+
+  #schoolPageLoader {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: linear-gradient(135deg, #0d2c5d, #123c7a, #1d65c1);
+  }
+
+  .school-loader-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at top left, rgba(255,255,255,0.08), transparent 30%),
+      radial-gradient(circle at bottom right, rgba(244,185,66,0.12), transparent 30%);
+    animation: loaderBgMove 8s ease-in-out infinite;
+  }
+
+  .school-loader-content {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    max-width: 90%;
+    z-index: 2;
+  }
+
+  .school-loader-logo {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, var(--school-accent), #f0a81f);
+    color: var(--school-primary-dark);
+    font-size: 1.6rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    box-shadow: 0 12px 28px rgba(244,185,66,0.25);
+    animation: logoPulse 2s infinite ease-in-out;
+  }
+
+  .school-loader-title {
+    font-size: clamp(1.8rem, 5vw, 2.6rem);
+    font-weight: 800;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+  }
+
+  .school-loader-tagline {
+    font-size: 1rem;
+    opacity: 0.85;
+    margin-bottom: 30px;
+  }
+
+  .school-loader-progress {
+    width: 220px;
+    height: 6px;
+    margin: 0 auto;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.2);
+    overflow: hidden;
+  }
+
+  .school-loader-bar {
+    height: 100%;
+    width: 0%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--school-accent), #fff);
+    animation: loaderProgress 2.2s ease forwards;
+  }
+
+  @keyframes loaderProgress {
+    0% { width: 0%; }
+    100% { width: 100%; }
+  }
+
+  @keyframes logoPulse {
+    0%,100% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+  }
+
+  @keyframes loaderBgMove {
+    0%,100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+
+  /* Fade Out */
+  .loader-hide {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.6s ease;
+  }
+
+  /* Responsive */
+  @media (max-width: 576px) {
+    .school-loader-logo {
+      width: 70px;
+      height: 70px;
+      font-size: 1.3rem;
+    }
+
+    .school-loader-progress {
+      width: 180px;
+    }
+  }
+</style>
+
+<script>
+  window.addEventListener("load", function () {
+    const loader = document.getElementById("schoolPageLoader");
+
+    setTimeout(() => {
+      loader.classList.add("loader-hide");
+
+      setTimeout(() => {
+        loader.style.display = "none";
+      }, 600);
+    }, 1800); // adjust timing here
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <!-- =========================
        STICKY HEADER / NAVBAR
   ========================== -->
@@ -60,7 +246,7 @@
           <ul class="navbar-nav ms-auto align-items-xl-center gap-xl-1">
 
             <li class="nav-item">
-              <a class="nav-link school-nav-link active" href="#">Home</a>
+              <a class="nav-link school-nav-link active" href="index.html">Home</a>
             </li>
 
             <li class="nav-item has-mega-menu position-static">
@@ -73,28 +259,28 @@
                 About Us <i class="bi bi-chevron-down nav-caret"></i>
               </button>
 
-              <div class="mega-menu" id="megaAbout" role="region" aria-label="About Us menu">
+               <div class="mega-menu" id="megaAbout" role="region" aria-label="About Us menu">
                 <div class="container-xxl">
                   <div class="mega-menu-inner">
                     <div class="row g-4">
                       <div class="col-xl-3 col-lg-6">
                         <div class="mega-column">
                           <h6 class="mega-heading">Who We Are</h6>
-                          <a href="#" class="mega-link">
+                          <a href="about_us.html#ourStory" class="mega-link">
                             <i class="bi bi-building"></i>
                             <div>
                               <span>Our Story</span>
                               <small>Learn about our journey and vision.</small>
                             </div>
                           </a>
-                          <a href="#" class="mega-link">
+                          <a href="about_us.html#visionMission" class="mega-link">
                             <i class="bi bi-bullseye"></i>
                             <div>
                               <span>Mission & Vision</span>
                               <small>Values that shape our institution.</small>
                             </div>
                           </a>
-                          <a href="#" class="mega-link">
+                          <a href="about_us.html#achievements" class="mega-link">
                             <i class="bi bi-award"></i>
                             <div>
                               <span>Achievements</span>
@@ -107,21 +293,21 @@
                       <div class="col-xl-3 col-lg-6">
                         <div class="mega-column">
                           <h6 class="mega-heading">Leadership</h6>
-                          <a href="#" class="mega-link">
+                          <a href="about_us.html#principalsMessage" class="mega-link">
                             <i class="bi bi-person-badge"></i>
                             <div>
                               <span>Principal’s Message</span>
                               <small>A note from school leadership.</small>
                             </div>
                           </a>
-                          <a href="#" class="mega-link">
+                          <a href="about_us.html#managementTeam" class="mega-link">
                             <i class="bi bi-people"></i>
                             <div>
                               <span>Management Team</span>
                               <small>Meet our trustees and administrators.</small>
                             </div>
                           </a>
-                          <a href="#" class="mega-link">
+                          <a href="about_us.html#facultyDirectory" class="mega-link">
                             <i class="bi bi-person-workspace"></i>
                             <div>
                               <span>Faculty Directory</span>
@@ -135,10 +321,10 @@
                         <div class="mega-column mega-highlight-box">
                           <h6 class="mega-heading">Quick Links</h6>
                           <ul class="quick-links-list">
-                            <li><a href="#">School Calendar</a></li>
-                            <li><a href="#">Mandatory Disclosures</a></li>
-                            <li><a href="#">Annual Report</a></li>
-                            <li><a href="#">Download Prospectus</a></li>
+                            <li><a href="about_us.html">School Calendar</a></li>
+                            <li><a href="about_us.html">Mandatory Disclosures</a></li>
+                            <li><a href="about_us.html">Annual Report</a></li>
+                            <li><a href="about_us.html">Download Prospectus</a></li>
                           </ul>
                         </div>
                       </div>
@@ -151,7 +337,7 @@
                             Explore our academic programs, modern campus facilities,
                             and student-first learning environment.
                           </p>
-                          <a href="#" class="btn btn-school-primary">Apply Now</a>
+                          <a href="registration.html" class="btn btn-school-primary">Apply Now</a>
                         </div>
                       </div>
                     </div>
@@ -177,21 +363,21 @@
                       <div class="col-xl-3 col-md-6">
                         <div class="mega-column">
                           <h6 class="mega-heading">Programs</h6>
-                          <a href="#" class="mega-link">
+                          <a href="academics.html#primarySchool" class="mega-link">
                             <i class="bi bi-book"></i>
                             <div>
                               <span>Primary School</span>
                               <small>Strong foundational learning years.</small>
                             </div>
                           </a>
-                          <a href="#" class="mega-link">
+                          <a href="academics.html#middleSchool" class="mega-link">
                             <i class="bi bi-journal-richtext"></i>
                             <div>
                               <span>Middle School</span>
                               <small>Balanced academic and personal growth.</small>
                             </div>
                           </a>
-                          <a href="#" class="mega-link">
+                          <a href="academics.html#seniorSecondary" class="mega-link">
                             <i class="bi bi-journal-check"></i>
                             <div>
                               <span>Senior Secondary</span>
@@ -204,21 +390,21 @@
                       <div class="col-xl-3 col-md-6">
                         <div class="mega-column">
                           <h6 class="mega-heading">Learning Resources</h6>
-                          <a href="#" class="mega-link">
+                          <a href="academics.html#cbseCurriculum" class="mega-link">
                             <i class="bi bi-easel2"></i>
                             <div>
                               <span>Curriculum</span>
                               <small>Structured and outcome-driven learning.</small>
                             </div>
                           </a>
-                          <a href="#" class="mega-link">
+                          <a href="academics.html#digitalLearning" class="mega-link">
                             <i class="bi bi-laptop"></i>
                             <div>
                               <span>Digital Learning</span>
                               <small>Smart classes and e-learning support.</small>
                             </div>
                           </a>
-                          <a href="#" class="mega-link">
+                          <a href="academics.html#assessmentSystem" class="mega-link">
                             <i class="bi bi-bar-chart-line"></i>
                             <div>
                               <span>Assessment System</span>
@@ -289,21 +475,21 @@
                       <div class="col-xl-4 col-md-6">
                         <div class="mega-column">
                           <h6 class="mega-heading">Admission Process</h6>
-                          <a href="#" class="mega-link">
+                          <a href="admission.html#offlineAdmissionProcess" class="mega-link">
                             <i class="bi bi-file-earmark-text"></i>
                             <div>
                               <span>How to Apply</span>
                               <small>Step-by-step admission guidance.</small>
                             </div>
                           </a>
-                          <a href="#" class="mega-link">
+                          <a href="admission.html#eligibilityDocuments" class="mega-link">
                             <i class="bi bi-folder-check"></i>
                             <div>
                               <span>Eligibility & Documents</span>
                               <small>Requirements and needed records.</small>
                             </div>
                           </a>
-                          <a href="#" class="mega-link">
+                          <a href="admission.html#feeStructure" class="mega-link">
                             <i class="bi bi-cash-coin"></i>
                             <div>
                               <span>Fee Structure</span>
@@ -317,10 +503,10 @@
                         <div class="mega-column mega-highlight-box">
                           <h6 class="mega-heading">Parent Essentials</h6>
                           <ul class="quick-links-list">
-                            <li><a href="#">Scholarships</a></li>
-                            <li><a href="#">Transport Routes</a></li>
-                            <li><a href="#">Uniform Guidelines</a></li>
-                            <li><a href="#">Admission FAQs</a></li>
+                            <li><a href="admission.html">Scholarships</a></li>
+                            <li><a href="admission.html">Transport Routes</a></li>
+                            <li><a href="admission.html">Uniform Guidelines</a></li>
+                            <li><a href="admission.html">Admission FAQs</a></li>
                           </ul>
                         </div>
                       </div>
@@ -333,7 +519,7 @@
                             Visit our classrooms, labs, library, and sports grounds to
                             experience our learning environment firsthand.
                           </p>
-                          <a href="#" class="btn btn-school-primary">Book Visit</a>
+                          <a href="registration.html" class="btn btn-school-primary">Registration</a>
                         </div>
                       </div>
                     </div>
@@ -441,15 +627,15 @@
   
 
             <li class="nav-item">
-              <a class="nav-link school-nav-link" href="#">Gallery</a>
+              <a class="nav-link school-nav-link" href="gallary.html">Gallery</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link school-nav-link" href="#">Contact</a>
+              <a class="nav-link school-nav-link" href="contact_us.html">Contact</a>
             </li>
 
             <li class="nav-item ms-xl-2">
-              <a href="#" class="btn btn-school-primary nav-cta">Enquire Now</a>
+              <a href="contact_us.html" class="btn btn-school-primary nav-cta">Enquire Now</a>
             </li>
           </ul>
         </div>
@@ -1155,45 +1341,7 @@ body {
   color: rgba(255, 255, 255, 0.88);
   margin-bottom: 16px;
 }
-
-/* =========================
-   DEMO SECTION
-========================= */
-.demo-hero {
-  min-height: calc(100vh - 86px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 80px 20px;
-}
-
-.demo-badge {
-  display: inline-block;
-  margin-bottom: 18px;
-  border-radius: 999px;
-  background: rgba(18, 60, 122, 0.08);
-  color: var(--school-primary);
-  padding: 8px 14px;
-  font-size: 0.82rem;
-  font-weight: 700;
-}
-
-.demo-hero h1 {
-  font-size: clamp(2rem, 4vw, 4rem);
-  font-weight: 800;
-  letter-spacing: -0.03em;
-  color: var(--school-primary-dark);
-  margin-bottom: 18px;
-}
-
-.demo-hero p {
-  max-width: 720px;
-  margin: 0 auto;
-  color: var(--school-muted);
-  line-height: 1.8;
-  font-size: 1.05rem;
-}
-
+  
 /* =========================
    FOCUS STATES / ACCESSIBILITY
 ========================= */
@@ -1392,11 +1540,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
- 
-  
-
-
-
 
 
 
@@ -1417,7 +1560,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       <!-- Slide 1 -->
       <div class="carousel-item active">
-        <div class="school-slide-bg" style="background-image: url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="school-slide-bg" style="background-image: url('hero1.jpg');"></div>
         <div class="school-slide-overlay"></div>
 
         <div class="container">
@@ -1434,8 +1577,8 @@ document.addEventListener("DOMContentLoaded", function () {
                   Empowering students through academic strength, creativity, discipline, and innovation in a safe and future-ready learning environment.
                 </p>
                 <div class="school-slide-actions animate-item animate-delay-4">
-                  <a href="#apply" class="btn school-btn-primary">Apply Now</a>
-                  <a href="#programs" class="btn school-btn-outline">Explore Programs</a>
+                  <a href="registration.html" class="btn school-btn-primary">Apply Now</a>
+                  <a href="#" class="btn school-btn-outline">Explore Programs</a>
                 </div>
               </div>
             </div>
@@ -1445,7 +1588,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       <!-- Slide 2 -->
       <div class="carousel-item">
-        <div class="school-slide-bg" style="background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="school-slide-bg" style="background-image: url('hero2.jpg');"></div>
         <div class="school-slide-overlay"></div>
 
         <div class="container">
@@ -1462,7 +1605,7 @@ document.addEventListener("DOMContentLoaded", function () {
                   From smart classrooms to practical learning, we build confident thinkers ready to thrive in tomorrow’s world.
                 </p>
                 <div class="school-slide-actions animate-item animate-delay-4">
-                  <a href="#apply" class="btn school-btn-primary">Apply Now</a>
+                  <a href="registration.html" class="btn school-btn-primary">Apply Now</a>
                   <a href="#campus" class="btn school-btn-outline">Explore Campus</a>
                 </div>
               </div>
@@ -1473,7 +1616,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       <!-- Slide 3 -->
       <div class="carousel-item">
-        <div class="school-slide-bg" style="background-image: url('https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="school-slide-bg" style="background-image: url('hero3.jpg');"></div>
         <div class="school-slide-overlay"></div>
 
         <div class="container">
@@ -1490,8 +1633,8 @@ document.addEventListener("DOMContentLoaded", function () {
                   We nurture talent in academics, sports, arts, and leadership to create well-rounded students with strong values and vision.
                 </p>
                 <div class="school-slide-actions animate-item animate-delay-4">
-                  <a href="#admissions" class="btn school-btn-primary">Apply Now</a>
-                  <a href="#activities" class="btn school-btn-outline">Student Activities</a>
+                  <a href="registration.html" class="btn school-btn-primary">Apply Now</a>
+                  <a href="#" class="btn school-btn-outline">Student Activities</a>
                 </div>
               </div>
             </div>
@@ -1501,7 +1644,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       <!-- Slide 4 -->
       <div class="carousel-item">
-        <div class="school-slide-bg" style="background-image: url('https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="school-slide-bg" style="background-image: url('hero4.webp');"></div>
         <div class="school-slide-overlay"></div>
 
         <div class="container">
@@ -1518,8 +1661,8 @@ document.addEventListener("DOMContentLoaded", function () {
                   A trusted academic space where students grow with confidence, discipline, compassion, and a passion for lifelong learning.
                 </p>
                 <div class="school-slide-actions animate-item animate-delay-4">
-                  <a href="#apply" class="btn school-btn-primary">Apply Now</a>
-                  <a href="#about" class="btn school-btn-outline">Why Choose Us</a>
+                  <a href="registration.html" class="btn school-btn-primary">Apply Now</a>
+                  <a href="about_us.html" class="btn school-btn-outline">Why Choose Us</a>
                 </div>
               </div>
             </div>
@@ -2008,7 +2151,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="about-visual-advanced reveal-left" id="aboutVisualCard">
           <div class="about-image-stack">
             <div class="about-image-main">
-              <img
+              <img loading="lazy"
                 src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1200&q=80"
                 alt="Modern school campus"
                 class="img-fluid"
@@ -2016,8 +2159,8 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
 
             <div class="about-image-sm">
-              <img
-                src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=80"
+              <img loading="lazy"
+                src="unnamed.jpg"
                 alt="Students learning together"
                 class="img-fluid"
               />
@@ -2065,7 +2208,7 @@ document.addEventListener("DOMContentLoaded", function () {
           </h2>
 
           <p class="about-text-advanced reveal-up">
-            At ABC International School, we create an inspiring learning environment
+            At Bright Future Academy, we create an inspiring learning environment
             where academic excellence meets creativity, character, and innovation.
             Our mission is to help every student discover their strengths, build
             confidence, and prepare for a future full of opportunity.
@@ -2856,7 +2999,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
           <div class="school-message-profile">
             <div class="school-message-image-wrap">
-              <img
+              <img loading="lazy"
                 src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=800&q=80"
                 alt="Principal portrait"
                 class="school-message-image"
@@ -2864,7 +3007,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
 
             <div class="school-message-meta">
-              <h3>Dr. Ananya Sharma</h3>
+              <h3>Dr.Rohan Sharma</h3>
               <span>Principal</span>
             </div>
           </div>
@@ -2894,7 +3037,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
           <div class="school-message-profile">
             <div class="school-message-image-wrap">
-              <img
+              <img loading="lazy"
                 src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
                 alt="Secretary portrait"
                 class="school-message-image"
@@ -2902,7 +3045,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
 
             <div class="school-message-meta">
-              <h3>Mr. Rohan Deshmukh</h3>
+              <h3>Mr. Ananya Deshmukh</h3>
               <span>Secretary</span>
             </div>
           </div>
@@ -3785,7 +3928,7 @@ document.addEventListener("DOMContentLoaded", function () {
           data-description="A welcoming, future-ready campus designed for holistic learning."
           data-image="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1400&q=80">
           <div class="school-gallery-image-wrap">
-            <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1400&q=80" alt="Modern school campus">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1400&q=80" alt="Modern school campus">
             <div class="school-gallery-overlay">
               <div class="school-gallery-badge">Campus</div>
               <div class="school-gallery-content">
@@ -3806,7 +3949,7 @@ document.addEventListener("DOMContentLoaded", function () {
           data-description="Curious minds working together through teamwork and creativity."
           data-image="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1400&q=80">
           <div class="school-gallery-image-wrap">
-            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1400&q=80" alt="Students learning together">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1400&q=80" alt="Students learning together">
             <div class="school-gallery-overlay">
               <div class="school-gallery-badge">Students</div>
               <div class="school-gallery-content">
@@ -3827,7 +3970,7 @@ document.addEventListener("DOMContentLoaded", function () {
           data-description="Technology-enabled teaching for engaging and meaningful education."
           data-image="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=1400&q=80">
           <div class="school-gallery-image-wrap">
-            <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=1400&q=80" alt="Interactive classroom">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=1400&q=80" alt="Interactive classroom">
             <div class="school-gallery-overlay">
               <div class="school-gallery-badge">Classroom</div>
               <div class="school-gallery-content">
@@ -3848,7 +3991,7 @@ document.addEventListener("DOMContentLoaded", function () {
           data-description="A joyful glimpse into our cultural and academic celebrations."
           data-image="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=1400&q=80">
           <div class="school-gallery-image-wrap">
-            <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=1400&q=80" alt="School event celebration">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=1400&q=80" alt="School event celebration">
             <div class="school-gallery-overlay">
               <div class="school-gallery-badge">Events</div>
               <div class="school-gallery-content">
@@ -3869,7 +4012,7 @@ document.addEventListener("DOMContentLoaded", function () {
           data-description="Beautifully designed infrastructure that supports student success."
           data-image="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?auto=format&fit=crop&w=1400&q=80">
           <div class="school-gallery-image-wrap">
-            <img src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?auto=format&fit=crop&w=1400&q=80" alt="School building and campus area">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?auto=format&fit=crop&w=1400&q=80" alt="School building and campus area">
             <div class="school-gallery-overlay">
               <div class="school-gallery-badge">Campus</div>
               <div class="school-gallery-content">
@@ -3890,7 +4033,7 @@ document.addEventListener("DOMContentLoaded", function () {
           data-description="Celebrating determination, excellence, and proud milestones."
           data-image="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80">
           <div class="school-gallery-image-wrap">
-            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80" alt="Students celebrating success">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80" alt="Students celebrating success">
             <div class="school-gallery-overlay">
               <div class="school-gallery-badge">Students</div>
               <div class="school-gallery-content">
@@ -3911,7 +4054,7 @@ document.addEventListener("DOMContentLoaded", function () {
           data-description="Hands-on learning that inspires imagination and expression."
           data-image="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=1400&q=80">
           <div class="school-gallery-image-wrap">
-            <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=1400&q=80" alt="Creative classroom learning">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=1400&q=80" alt="Creative classroom learning">
             <div class="school-gallery-overlay">
               <div class="school-gallery-badge">Classroom</div>
               <div class="school-gallery-content">
@@ -3932,7 +4075,7 @@ document.addEventListener("DOMContentLoaded", function () {
           data-description="Energetic and meaningful moments from our school community."
           data-image="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1400&q=80">
           <div class="school-gallery-image-wrap">
-            <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1400&q=80" alt="Students at school program">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1400&q=80" alt="Students at school program">
             <div class="school-gallery-overlay">
               <div class="school-gallery-badge">Events</div>
               <div class="school-gallery-content">
@@ -3963,7 +4106,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       <div class="school-gallery-lightbox-content">
         <div class="school-gallery-lightbox-image-wrap">
-          <img id="lightboxImage" src="" alt="Gallery preview image">
+          <img loading="lazy" id="lightboxImage" src="" alt="Gallery preview image">
         </div>
         <div class="school-gallery-lightbox-info">
           <span class="school-gallery-lightbox-label">School Gallery</span>
@@ -4979,8 +5122,8 @@ document.addEventListener("DOMContentLoaded", function () {
             </p>
 
             <div class="school-faq-image-wrap">
-              <img
-                src="https://pngimg.com/d/student_PNG62539.png"
+              <img loading="lazy"
+                src="faq.webp"
                 alt="Students illustration"
                 class="school-faq-image"
               />
@@ -5543,7 +5686,7 @@ document.addEventListener("DOMContentLoaded", function () {
               <i class="bi bi-buildings-fill"></i>
             </span>
             <div>
-              <strong>ABC International School</strong>
+              <strong>Bright Future Academy</strong>
               <small>Learn • Lead • Inspire</small>
             </div>
           </a>
@@ -5626,7 +5769,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <div class="school-footer-bottom">
       <div class="row gy-3 align-items-center">
         <div class="col-md-6">
-          <p class="mb-0">© 2026 ABC International School. All Rights Reserved.</p>
+          <p class="mb-0">© 2026 Bright Future Academy. All Rights Reserved.</p>
         </div>
         <div class="col-md-6">
           <div class="school-footer-bottom-links">
@@ -6059,6 +6202,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 </script>
+
+
+
+
+
+
   <!-- Bootstrap 5 JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>

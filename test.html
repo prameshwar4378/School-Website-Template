@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>School Contact Us</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    :root {
+  --school-primary: #123c7a;
+  --school-primary-dark: #0d2c5d;
+  --school-secondary: #1d65c1;
+  --school-accent: #f4b942;
+  --school-bg: #f4f8fc;
+  --school-surface: #ffffff;
+  --school-border: #dbe5f0;
+  --school-text: #1b2b45;
+  --school-muted: #6b7a90;
+  --school-shadow: 0 16px 50px rgba(10, 31, 68, 0.12);
+  --school-shadow-soft: 0 10px 30px rgba(18, 60, 122, 0.08);
+  --school-radius: 18px;
+  --transition-base: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--school-text);
+  background: var(--school-bg);
+  overflow-x: hidden;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+.container {
+  width: min(100% - 32px, 1440px);
+  margin: 0 auto;
+}
+
+.wide-container {
+  width: min(100% - 28px, 1520px);
+}
+
+/* Background */
+.page-bg-grid {
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(18, 60, 122, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(18, 60, 122, 0.025) 1px, transparent 1px);
+  background-size: 44px 44px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bg-blob {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(90px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.blob-1 {
+  width: 280px;
+  height: 280px;
+  top: -40px;
+  left: -70px;
+  background: rgba(244, 185, 66, 0.16);
+}
+
+.blob-2 {
+  width: 360px;
+  height: 360px;
+  right: -80px;
+  bottom: 60px;
+  background: rgba(29, 101, 193, 0.14);
+}
+
+section {
+  position: relative;
+  z-index: 2;
+}
+
+/* Section Background Styles */
+.dark-section {
+  background:
+    radial-gradient(circle at top left, rgba(244,185,66,0.22), transparent 24%),
+    radial-gradient(circle at bottom right, rgba(29,101,193,0.20), transparent 24%),
+    linear-gradient(135deg, #071a34 0%, #0d2c5d 45%, #123c7a 100%);
+  color: #fff;
+}
+
+.dark-soft-section {
+  background:
+    linear-gradient(135deg, rgba(8,26,52,0.96), rgba(13,44,93,0.92)),
+    #0d2c5d;
+  color: #fff;
+}
+
+.light-section {
+  background: linear-gradient(180deg, #ffffff 0%, #f4f8fc 100%);
+}
+
+/* Reusable */
+.section-label,
+.hero-badge,
+.hero-card-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+}
+
+.section-label {
+  color: var(--school-primary-dark);
+  background: rgba(244, 185, 66, 0.14);
+  border: 1px solid rgba(244, 185, 66, 0.35);
+}
+
+.section-label-dark {
+  color: #fff;
+  background: rgba(244, 185, 66, 0.16);
+  border: 1px solid rgba(244, 185, 66, 0.28);
+}
+
+.center-heading {
+  text-align: center;
+  max-width: 860px;
+  margin: 0 auto 50px;
+}
+
+.center-heading h2,
+.visit-left h2,
+.left-panel h2 {
+  font-size: clamp(2rem, 3.5vw, 3.4rem);
+  line-height: 1.15;
+}
+
+.center-heading p,
+.visit-left p,
+.left-panel p {
+  color: var(--school-muted);
+  line-height: 1.8;
+  margin-top: 14px;
+  font-size: 1rem;
+}
+
+.dark-soft-section .left-panel p {
+  color: rgba(255,255,255,0.78);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 170px;
+  padding: 15px 24px;
+  border-radius: 14px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  transition: var(--transition-base);
+}
+
+.btn-accent {
+  background: linear-gradient(135deg, var(--school-accent), #ff9f2f);
+  color: #fff;
+  box-shadow: 0 14px 30px rgba(244, 185, 66, 0.28);
+}
+
+.btn-accent:hover {
+  transform: translateY(-3px);
+}
+
+.btn-outline-light {
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.25);
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+}
+
+.btn-outline-light:hover {
+  transform: translateY(-3px);
+  background: rgba(255,255,255,0.14);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--school-primary), var(--school-secondary));
+  color: #fff;
+  box-shadow: 0 14px 30px rgba(18, 60, 122, 0.18);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+}
+
+/* Hero */
+.contact-hero {
+  padding: 90px 0 80px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-layout {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero-left h1 {
+  margin-top: 18px;
+  font-size: clamp(2.8rem, 6vw, 5.8rem);
+  line-height: 1.03;
+  font-weight: 900;
+  max-width: 900px;
+}
+
+.hero-left h1 span {
+  display: block;
+  background: linear-gradient(135deg, #f4b942, #ffb347, #ffd27a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-left p {
+  max-width: 760px;
+  margin-top: 20px;
+  font-size: 1.08rem;
+  line-height: 1.9;
+  color: rgba(255,255,255,0.80);
+}
+
+.hero-actions {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.hero-bottom-cards {
+  margin-top: 42px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.hero-mini-card {
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.09);
+  border: 1px solid rgba(255,255,255,0.10);
+  backdrop-filter: blur(12px);
+  min-height: 120px;
+  transition: var(--transition-base);
+}
+
+.hero-mini-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(244,185,66,0.45);
+}
+
+.hero-mini-card strong {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.hero-mini-card span {
+  display: block;
+  color: rgba(255,255,255,0.72);
+  line-height: 1.6;
+  font-size: 0.92rem;
+}
+
+.hero-badge {
+  color: #fff;
+  background: rgba(244, 185, 66, 0.15);
+  border: 1px solid rgba(244, 185, 66, 0.32);
+}
+
+.hero-right {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-card {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.14);
+  backdrop-filter: blur(16px);
+  border-radius: 28px;
+  padding: 34px;
+  box-shadow: 0 24px 70px rgba(0,0,0,0.18);
+  overflow: hidden;
+}
+
+.hero-card-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(90deg, var(--school-accent), #ff9f2f, #ffd27a);
+}
+
+.hero-card-badge {
+  color: #fff;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.14);
+}
+
+.hero-card h3 {
+  margin-top: 18px;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.hero-card p {
+  margin-top: 14px;
+  color: rgba(255,255,255,0.78);
+  line-height: 1.8;
+}
+
+.hero-stats {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.stat-box {
+  padding: 18px 14px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  text-align: center;
+}
+
+.stat-box h2 {
+  font-size: 1.8rem;
+  color: var(--school-accent);
+  font-weight: 800;
+}
+
+.stat-box span {
+  display: block;
+  margin-top: 6px;
+  color: rgba(255,255,255,0.72);
+  font-size: 0.9rem;
+}
+
+.floating-pill {
+  position: absolute;
+  padding: 12px 16px;
+  border-radius: 999px;
+  font-size: 0.86rem;
+  font-weight: 700;
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.12);
+  backdrop-filter: blur(10px);
+}
+
+.pill-1 {
+  top: 30px;
+  right: -30px;
+  animation: floatY 4s ease-in-out infinite;
+}
+
+.pill-2 {
+  bottom: 30px;
+  left: -24px;
+  animation: floatY 4s ease-in-out infinite 1s;
+}
+
+/* Info strip */
+.info-strip {
+  padding: 90px 0;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.info-card {
+  text-align: center;
+  background: #fff;
+  border: 1px solid var(--school-border);
+  border-radius: 22px;
+  padding: 34px 22px;
+  box-shadow: var(--school-shadow-soft);
+  transition: var(--transition-base);
+}
+
+.info-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 36px rgba(18, 60, 122, 0.12);
+  border-color: rgba(244, 185, 66, 0.45);
+}
+
+.info-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 18px;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  background: linear-gradient(135deg, rgba(244,185,66,0.22), rgba(29,101,193,0.12));
+}
+
+.info-card h4 {
+  font-size: 1.08rem;
+  color: var(--school-primary-dark);
+  margin-bottom: 10px;
+}
+
+.info-card p {
+  color: var(--school-muted);
+  line-height: 1.7;
+}
+
+/* Contact main */
+.contact-main {
+  padding: 95px 0;
+}
+
+.contact-main-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.left-panel {
+  padding: 20px 10px 20px 0;
+}
+
+.left-panel h2 {
+  margin-top: 18px;
+  color: #fff;
+}
+
+.feature-list {
+  margin-top: 36px;
+  display: grid;
+  gap: 18px;
+}
+
+.feature-card {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 22px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: var(--transition-base);
+}
+
+.feature-card:hover {
+  transform: translateX(6px);
+  border-color: rgba(244,185,66,0.34);
+}
+
+.feature-icon {
+  min-width: 48px;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, var(--school-accent), #ff9f2f);
+  color: #fff;
+  font-weight: 800;
+}
+
+.feature-card h4 {
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.feature-card p {
+  margin: 0;
+  color: rgba(255,255,255,0.74);
+  line-height: 1.7;
+}
+
+/* Form */
+.form-box {
+  position: relative;
+  overflow: hidden;
+  padding: 34px;
+  border-radius: 28px;
+  background: #ffffff;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.16);
+}
+
+.form-glow {
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(244,185,66,0.25), transparent 70%);
+}
+
+.form-box h3 {
+  margin-top: 14px;
+  font-size: 2rem;
+  color: var(--school-primary-dark);
+}
+
+.form-box p {
+  color: var(--school-muted);
+  margin-top: 10px;
+  line-height: 1.8;
+}
+
+.contact-form {
+  margin-top: 28px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--school-primary-dark);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 15px 16px;
+  border-radius: 14px;
+  border: 1px solid var(--school-border);
+  background: #fff;
+  color: var(--school-text);
+  outline: none;
+  transition: var(--transition-base);
+  font-size: 0.97rem;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 160px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: rgba(244, 185, 66, 0.75);
+  box-shadow: 0 0 0 4px rgba(244, 185, 66, 0.15);
+  transform: translateY(-1px);
+}
+
+.error-text {
+  display: block;
+  font-size: 0.82rem;
+  color: #d44e4e;
+  margin-top: 8px;
+  min-height: 16px;
+}
+
+.btn-submit {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  padding: 16px 20px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--school-accent), #ff9f2f);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 800;
+  transition: var(--transition-base);
+  box-shadow: 0 14px 28px rgba(244, 185, 66, 0.28);
+}
+
+.btn-submit:hover {
+  transform: translateY(-3px);
+}
+
+.success-message {
+  display: none;
+  margin-top: 16px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(27, 156, 87, 0.12);
+  color: #11824c;
+  border: 1px solid rgba(27, 156, 87, 0.20);
+  font-weight: 600;
+}
+
+/* Visit */
+.visit-section {
+  padding: 95px 0;
+}
+
+.visit-layout {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.map-box {
+  position: relative;
+  min-height: 420px;
+  border-radius: 28px;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, rgba(244,185,66,0.13), rgba(29,101,193,0.13)),
+    #eef4fb;
+  border: 1px solid var(--school-border);
+  box-shadow: var(--school-shadow-soft);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  color: var(--school-primary-dark);
+}
+
+.map-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(18, 60, 122, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(18, 60, 122, 0.06) 1px, transparent 1px);
+  background-size: 38px 38px;
+}
+
+.map-pin {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  background: linear-gradient(135deg, var(--school-accent), #ff9f2f);
+  box-shadow: 0 0 0 12px rgba(244, 185, 66, 0.14);
+  animation: pulsePin 2.2s infinite ease-in-out;
+}
+
+.map-pin::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  top: 9px;
+  left: 9px;
+}
+
+/* Animations */
+.floating-card {
+  animation: floatY 4s ease-in-out infinite;
+}
+
+.delay-1 {
+  animation-delay: 0.8s;
+}
+
+.delay-2 {
+  animation-delay: 1.4s;
+}
+
+@keyframes floatY {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulsePin {
+  0%, 100% {
+    transform: rotate(-45deg) scale(1);
+  }
+  50% {
+    transform: rotate(-45deg) scale(1.08);
+  }
+}
+
+/* Scroll reveal */
+.reveal-up,
+.reveal-left,
+.reveal-right,
+.reveal-scale {
+  opacity: 0;
+  transition: 0.9s ease;
+}
+
+.reveal-up {
+  transform: translateY(40px);
+}
+
+.reveal-left {
+  transform: translateX(-50px);
+}
+
+.reveal-right {
+  transform: translateX(50px);
+}
+
+.reveal-scale {
+  transform: scale(0.92);
+}
+
+.reveal-active {
+  opacity: 1;
+  transform: translate(0, 0) scale(1);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .hero-layout,
+  .contact-main-grid,
+  .visit-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-bottom-cards,
+  .info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-right {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-hero,
+  .info-strip,
+  .contact-main,
+  .visit-section {
+    padding: 70px 0;
+  }
+
+  .form-row,
+  .hero-bottom-cards,
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-left h1 {
+    font-size: 2.7rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .pill-1,
+  .pill-2 {
+    position: static;
+    display: inline-flex;
+    margin-top: 14px;
+  }
+
+  .hero-card {
+    padding: 26px 20px;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .map-box {
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wide-container {
+    width: min(100% - 18px, 1520px);
+  }
+
+  .hero-left h1 {
+    font-size: 2.25rem;
+  }
+
+  .center-heading h2,
+  .visit-left h2,
+  .left-panel h2 {
+    font-size: 1.75rem;
+  }
+
+  .form-box {
+    padding: 22px 16px;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <!-- Decorative Background -->
+  <div class="page-bg-grid"></div>
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
+
+  <!-- HERO -->
+  <section class="contact-hero dark-section">
+    <div class="container wide-container">
+      <div class="hero-layout">
+
+        <div class="hero-left reveal-up">
+          <span class="hero-badge">Contact & Inquiry Support</span>
+          <h1>
+            Connect With Our
+            <span>Admissions Team</span>
+            For Every Academic Inquiry
+          </h1>
+          <p>
+            Reach out for admissions guidance, fee details, campus visits,
+            documentation help, and academic support. Designed for parents,
+            students, and guardians seeking a seamless communication experience.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact-form-section" class="btn btn-accent">Send Inquiry</a>
+            <a href="#contact-info-section" class="btn btn-outline-light">View Details</a>
+          </div>
+
+          <div class="hero-bottom-cards">
+            <div class="hero-mini-card floating-card">
+              <strong>Fast Response</strong>
+              <span>Admissions & support team assistance</span>
+            </div>
+            <div class="hero-mini-card floating-card delay-1">
+              <strong>Easy Process</strong>
+              <span>Quick inquiry and guided communication</span>
+            </div>
+            <div class="hero-mini-card floating-card delay-2">
+              <strong>Visit Campus</strong>
+              <span>Schedule your school tour smoothly</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right reveal-scale">
+          <div class="hero-card">
+            <div class="hero-card-top"></div>
+            <span class="hero-card-badge">School Helpdesk</span>
+            <h3>Professional Parent Communication</h3>
+            <p>
+              A modern contact experience crafted for institutions that want
+              trust, clarity, responsiveness, and premium presentation.
+            </p>
+
+            <div class="hero-stats">
+              <div class="stat-box">
+                <h2 class="counter" data-target="24">0</h2>
+                <span>Hr Support</span>
+              </div>
+              <div class="stat-box">
+                <h2 class="counter" data-target="98">0</h2>
+                <span>% Response</span>
+              </div>
+              <div class="stat-box">
+                <h2 class="counter" data-target="100">0</h2>
+                <span>Parent Queries</span>
+              </div>
+            </div>
+
+            <div class="floating-pill pill-1">Admissions Open</div>
+            <div class="floating-pill pill-2">Creative Contact UI</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT INFO -->
+  <section class="info-strip light-section" id="contact-info-section">
+    <div class="container wide-container">
+      <div class="section-heading center-heading reveal-up">
+        <span class="section-label">Contact Information</span>
+        <h2>Reach Us Through Multiple Communication Channels</h2>
+        <p>
+          Make your school inquiry process more efficient with direct access to
+          our office, admissions desk, support team, and campus location.
+        </p>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-card reveal-up">
+          <div class="info-icon">📍</div>
+          <h4>School Address</h4>
+          <p>123 Academic Avenue, Knowledge City, Maharashtra, India</p>
+        </div>
+
+        <div class="info-card reveal-up">
+          <div class="info-icon">📞</div>
+          <h4>Phone Number</h4>
+          <p>+91 98765 43210</p>
+        </div>
+
+        <div class="info-card reveal-up">
+          <div class="info-icon">✉️</div>
+          <h4>Email Address</h4>
+          <p>admissions@schoolname.edu.in</p>
+        </div>
+
+        <div class="info-card reveal-up">
+          <div class="info-icon">⏰</div>
+          <h4>Office Hours</h4>
+          <p>Mon - Sat : 9:00 AM - 5:00 PM</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM + DETAILS -->
+  <section class="contact-main dark-soft-section" id="contact-form-section">
+    <div class="container wide-container">
+      <div class="contact-main-grid">
+
+        <div class="left-panel reveal-left">
+          <span class="section-label section-label-dark">Why Contact Us</span>
+          <h2>We Make School Communication Clear, Warm, And Professional</h2>
+          <p>
+            Whether you are looking for admission assistance, campus visit booking,
+            fee structure, transportation details, or academic support,
+            our team is ready to guide you.
+          </p>
+
+          <div class="feature-list">
+            <div class="feature-card">
+              <div class="feature-icon">✔</div>
+              <div>
+                <h4>Admissions Guidance</h4>
+                <p>Get help with forms, documents, and process clarity.</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">✔</div>
+              <div>
+                <h4>Fee & Facility Queries</h4>
+                <p>Request information about fees, transport, and amenities.</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">✔</div>
+              <div>
+                <h4>Campus Visit Scheduling</h4>
+                <p>Book school visits and interact with our support desk.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-panel reveal-right">
+          <div class="form-box">
+            <div class="form-glow"></div>
+            <span class="section-label">Inquiry Form</span>
+            <h3>Send Your Message</h3>
+            <p>Fill out your details and we will get back to you soon.</p>
+
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" placeholder="Enter your full name">
+                  <small class="error-text"></small>
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" placeholder="Enter phone number">
+                  <small class="error-text"></small>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" placeholder="Enter your email">
+                  <small class="error-text"></small>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Inquiry Type</label>
+                  <select id="subject">
+                    <option value="">Select inquiry type</option>
+                    <option>Admission Inquiry</option>
+                    <option>Fee Structure</option>
+                    <option>Campus Visit</option>
+                    <option>Academic Information</option>
+                    <option>General Support</option>
+                  </select>
+                  <small class="error-text"></small>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="class">Class Interested In</label>
+                <select id="class">
+                  <option value="">Select class</option>
+                  <option>Pre-Primary</option>
+                  <option>Primary</option>
+                  <option>Middle School</option>
+                  <option>Secondary</option>
+                  <option>Higher Secondary</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="6" placeholder="Write your inquiry here..."></textarea>
+                <small class="error-text"></small>
+              </div>
+
+              <button type="submit" class="btn-submit">
+                <span>Submit Inquiry</span>
+              </button>
+
+              <div class="success-message" id="successMessage">
+                Your inquiry has been submitted successfully.
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT / MAP -->
+  <section class="visit-section light-section">
+    <div class="container wide-container">
+      <div class="visit-layout">
+
+        <div class="visit-left reveal-up">
+          <span class="section-label">Campus Visit</span>
+          <h2>Visit Our School And Experience The Learning Environment</h2>
+          <p>
+            Discover our academic atmosphere, facilities, classrooms,
+            and student-focused culture by scheduling a guided school visit.
+          </p>
+          <a href="#" class="btn btn-primary">Book a Campus Visit</a>
+        </div>
+
+        <div class="visit-right reveal-scale">
+          <div class="map-box">
+            <div class="map-grid"></div>
+            <div class="map-pin"></div>
+            <span>School Location Preview</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

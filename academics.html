@@ -1,0 +1,6761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>School Mega Navigation</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+  <!-- =========================
+       STICKY HEADER / NAVBAR
+  ========================== -->
+  <header class="school-header sticky-top">
+    <nav class="navbar navbar-expand-xl school-navbar py-0" aria-label="Main navigation">
+      <div class="container-fluid container-xxl">
+
+        <!-- Brand -->
+        <a class="navbar-brand school-brand d-flex align-items-center gap-3" href="#">
+          <div class="school-logo">
+            <i class="bi bi-mortarboard-fill"></i>
+          </div>
+          <div class="brand-text">
+            <span class="school-name">Bright Future Academy</span>
+            <span class="school-tagline">Excellence • Values • Innovation</span>
+          </div>
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button
+          class="navbar-toggler border-0 shadow-none"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#mobileMenu"
+          aria-controls="mobileMenu"
+          aria-label="Open menu"
+        >
+          <span class="custom-toggler">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+
+        <!-- Desktop Nav -->
+        <div class="collapse navbar-collapse d-none d-xl-flex" id="desktopNav">
+          <ul class="navbar-nav ms-auto align-items-xl-center gap-xl-1">
+
+            <li class="nav-item">
+              <a class="nav-link school-nav-link active" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item has-mega-menu position-static">
+              <button
+                class="nav-link school-nav-link mega-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="megaAbout"
+              >
+                About Us <i class="bi bi-chevron-down nav-caret"></i>
+              </button>
+
+               <div class="mega-menu" id="megaAbout" role="region" aria-label="About Us menu">
+                <div class="container-xxl">
+                  <div class="mega-menu-inner">
+                    <div class="row g-4">
+                      <div class="col-xl-3 col-lg-6">
+                        <div class="mega-column">
+                          <h6 class="mega-heading">Who We Are</h6>
+                          <a href="about_us.html#ourStory" class="mega-link">
+                            <i class="bi bi-building"></i>
+                            <div>
+                              <span>Our Story</span>
+                              <small>Learn about our journey and vision.</small>
+                            </div>
+                          </a>
+                          <a href="about_us.html#visionMission" class="mega-link">
+                            <i class="bi bi-bullseye"></i>
+                            <div>
+                              <span>Mission & Vision</span>
+                              <small>Values that shape our institution.</small>
+                            </div>
+                          </a>
+                          <a href="about_us.html#achievements" class="mega-link">
+                            <i class="bi bi-award"></i>
+                            <div>
+                              <span>Achievements</span>
+                              <small>Milestones, rankings, and recognitions.</small>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-3 col-lg-6">
+                        <div class="mega-column">
+                          <h6 class="mega-heading">Leadership</h6>
+                          <a href="about_us.html#principalsMessage" class="mega-link">
+                            <i class="bi bi-person-badge"></i>
+                            <div>
+                              <span>Principal’s Message</span>
+                              <small>A note from school leadership.</small>
+                            </div>
+                          </a>
+                          <a href="about_us.html#managementTeam" class="mega-link">
+                            <i class="bi bi-people"></i>
+                            <div>
+                              <span>Management Team</span>
+                              <small>Meet our trustees and administrators.</small>
+                            </div>
+                          </a>
+                          <a href="about_us.html#facultyDirectory" class="mega-link">
+                            <i class="bi bi-person-workspace"></i>
+                            <div>
+                              <span>Faculty Directory</span>
+                              <small>Experienced educators and staff.</small>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-3 col-lg-6">
+                        <div class="mega-column mega-highlight-box">
+                          <h6 class="mega-heading">Quick Links</h6>
+                          <ul class="quick-links-list">
+                            <li><a href="about_us.html">School Calendar</a></li>
+                            <li><a href="about_us.html">Mandatory Disclosures</a></li>
+                            <li><a href="about_us.html">Annual Report</a></li>
+                            <li><a href="about_us.html">Download Prospectus</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-3 col-lg-6">
+                        <div class="featured-card">
+                          <span class="featured-badge">Featured</span>
+                          <h5>Admission Open 2026–27</h5>
+                          <p>
+                            Explore our academic programs, modern campus facilities,
+                            and student-first learning environment.
+                          </p>
+                          <a href="registration.html" class="btn btn-school-primary">Apply Now</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item has-mega-menu position-static">
+              <button
+                class="nav-link school-nav-link mega-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="megaAcademics"
+              >
+                Academics <i class="bi bi-chevron-down nav-caret"></i>
+              </button>
+
+              <div class="mega-menu" id="megaAcademics" role="region" aria-label="Academics menu">
+                <div class="container-xxl">
+                  <div class="mega-menu-inner">
+                    <div class="row g-4">
+                      <div class="col-xl-3 col-md-6">
+                        <div class="mega-column">
+                          <h6 class="mega-heading">Programs</h6>
+                          <a href="academics.html#primarySchool" class="mega-link">
+                            <i class="bi bi-book"></i>
+                            <div>
+                              <span>Primary School</span>
+                              <small>Strong foundational learning years.</small>
+                            </div>
+                          </a>
+                          <a href="academics.html#middleSchool" class="mega-link">
+                            <i class="bi bi-journal-richtext"></i>
+                            <div>
+                              <span>Middle School</span>
+                              <small>Balanced academic and personal growth.</small>
+                            </div>
+                          </a>
+                          <a href="academics.html#seniorSecondary" class="mega-link">
+                            <i class="bi bi-journal-check"></i>
+                            <div>
+                              <span>Senior Secondary</span>
+                              <small>Future-focused preparation and guidance.</small>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-3 col-md-6">
+                        <div class="mega-column">
+                          <h6 class="mega-heading">Learning Resources</h6>
+                          <a href="academics.html#cbseCurriculum" class="mega-link">
+                            <i class="bi bi-easel2"></i>
+                            <div>
+                              <span>Curriculum</span>
+                              <small>Structured and outcome-driven learning.</small>
+                            </div>
+                          </a>
+                          <a href="academics.html#digitalLearning" class="mega-link">
+                            <i class="bi bi-laptop"></i>
+                            <div>
+                              <span>Digital Learning</span>
+                              <small>Smart classes and e-learning support.</small>
+                            </div>
+                          </a>
+                          <a href="academics.html#assessmentSystem" class="mega-link">
+                            <i class="bi bi-bar-chart-line"></i>
+                            <div>
+                              <span>Assessment System</span>
+                              <small>Transparent and continuous evaluation.</small>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-3 col-md-6">
+                        <div class="mega-column">
+                          <h6 class="mega-heading">Departments</h6>
+                          <a href="#" class="mega-link">
+                            <i class="bi bi-calculator"></i>
+                            <div>
+                              <span>Mathematics</span>
+                              <small>Problem-solving and analytical thinking.</small>
+                            </div>
+                          </a>
+                          <a href="#" class="mega-link">
+                            <i class="bi bi-globe2"></i>
+                            <div>
+                              <span>Science</span>
+                              <small>Hands-on, practical exploration.</small>
+                            </div>
+                          </a>
+                          <a href="#" class="mega-link">
+                            <i class="bi bi-translate"></i>
+                            <div>
+                              <span>Languages</span>
+                              <small>Communication and literary enrichment.</small>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-3 col-md-6">
+                        <div class="featured-card featured-card-academic">
+                          <span class="featured-badge">Announcement</span>
+                          <h5>New STEAM Lab Launch</h5>
+                          <p>
+                            Introducing interactive robotics, coding, and innovation-based
+                            projects from the upcoming session.
+                          </p>
+                          <a href="#" class="btn btn-school-outline">Explore Labs</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item has-mega-menu position-static">
+              <button
+                class="nav-link school-nav-link mega-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="megaAdmissions"
+              >
+                Admissions <i class="bi bi-chevron-down nav-caret"></i>
+              </button>
+
+              <div class="mega-menu" id="megaAdmissions" role="region" aria-label="Admissions menu">
+                <div class="container-xxl">
+                  <div class="mega-menu-inner">
+                    <div class="row g-4">
+                      <div class="col-xl-4 col-md-6">
+                        <div class="mega-column">
+                          <h6 class="mega-heading">Admission Process</h6>
+                          <a href="admission.html#offlineAdmissionProcess" class="mega-link">
+                            <i class="bi bi-file-earmark-text"></i>
+                            <div>
+                              <span>How to Apply</span>
+                              <small>Step-by-step admission guidance.</small>
+                            </div>
+                          </a>
+                          <a href="admission.html#eligibilityDocuments" class="mega-link">
+                            <i class="bi bi-folder-check"></i>
+                            <div>
+                              <span>Eligibility & Documents</span>
+                              <small>Requirements and needed records.</small>
+                            </div>
+                          </a>
+                          <a href="admission.html#feeStructure" class="mega-link">
+                            <i class="bi bi-cash-coin"></i>
+                            <div>
+                              <span>Fee Structure</span>
+                              <small>Transparent fee details and payment options.</small>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-4 col-md-6">
+                        <div class="mega-column mega-highlight-box">
+                          <h6 class="mega-heading">Parent Essentials</h6>
+                          <ul class="quick-links-list">
+                            <li><a href="admission.html">Scholarships</a></li>
+                            <li><a href="admission.html">Transport Routes</a></li>
+                            <li><a href="admission.html">Uniform Guidelines</a></li>
+                            <li><a href="admission.html">Admission FAQs</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-4 col-md-12">
+                        <div class="featured-card">
+                          <span class="featured-badge">Limited Seats</span>
+                          <h5>Schedule a Campus Tour</h5>
+                          <p>
+                            Visit our classrooms, labs, library, and sports grounds to
+                            experience our learning environment firsthand.
+                          </p>
+                          <a href="registration.html" class="btn btn-school-primary">Registration</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item has-mega-menu position-static">
+              <button
+                class="nav-link school-nav-link mega-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="megaCampusLife"
+              >
+                Campus Life <i class="bi bi-chevron-down nav-caret"></i>
+              </button>
+
+              <div class="mega-menu" id="megaCampusLife" role="region" aria-label="Campus Life menu">
+                <div class="container-xxl">
+                  <div class="mega-menu-inner">
+                    <div class="row g-4">
+                      <div class="col-xl-3 col-md-6">
+                        <div class="mega-column">
+                          <h6 class="mega-heading">Student Experience</h6>
+                          <a href="#" class="mega-link">
+                            <i class="bi bi-trophy"></i>
+                            <div>
+                              <span>Sports</span>
+                              <small>Fitness, teamwork, and competition.</small>
+                            </div>
+                          </a>
+                          <a href="#" class="mega-link">
+                            <i class="bi bi-brush"></i>
+                            <div>
+                              <span>Arts & Culture</span>
+                              <small>Creative expression and performances.</small>
+                            </div>
+                          </a>
+                          <a href="#" class="mega-link">
+                            <i class="bi bi-music-note-beamed"></i>
+                            <div>
+                              <span>Clubs & Societies</span>
+                              <small>Leadership, hobbies, and collaboration.</small>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-3 col-md-6">
+                        <div class="mega-column">
+                          <h6 class="mega-heading">Support & Care</h6>
+                          <a href="#" class="mega-link">
+                            <i class="bi bi-heart-pulse"></i>
+                            <div>
+                              <span>Wellness</span>
+                              <small>Health, safety, and student well-being.</small>
+                            </div>
+                          </a>
+                          <a href="#" class="mega-link">
+                            <i class="bi bi-shield-check"></i>
+                            <div>
+                              <span>Safety Measures</span>
+                              <small>Secure and responsible campus systems.</small>
+                            </div>
+                          </a>
+                          <a href="#" class="mega-link">
+                            <i class="bi bi-chat-dots"></i>
+                            <div>
+                              <span>Counselling</span>
+                              <small>Guidance for personal and academic growth.</small>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-3 col-md-6">
+                        <div class="mega-column mega-highlight-box">
+                          <h6 class="mega-heading">Popular Links</h6>
+                          <ul class="quick-links-list">
+                            <li><a href="#">Student Council</a></li>
+                            <li><a href="#">House System</a></li>
+                            <li><a href="#">Community Service</a></li>
+                            <li><a href="#">Annual Fest</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-3 col-md-6">
+                        <div class="featured-card">
+                          <span class="featured-badge">This Month</span>
+                          <h5>Inter-School Cultural Week</h5>
+                          <p>
+                            Join students in a vibrant celebration of music, art,
+                            debate, innovation, and performance.
+                          </p>
+                          <a href="#" class="btn btn-school-outline">View Events</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+  
+
+            <li class="nav-item">
+              <a class="nav-link school-nav-link" href="gallary.html">Gallery</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link school-nav-link" href="contact_us.html">Contact</a>
+            </li>
+
+            <li class="nav-item ms-xl-2">
+              <a href="contact_us.html" class="btn btn-school-primary nav-cta">Enquire Now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- =========================
+       MOBILE OFFCANVAS MENU
+  ========================== -->
+  <div
+    class="offcanvas offcanvas-end school-offcanvas"
+    tabindex="-1"
+    id="mobileMenu"
+    aria-labelledby="mobileMenuLabel"
+  >
+    <div class="offcanvas-header">
+      <div class="d-flex align-items-center gap-3">
+        <div class="school-logo mobile-logo">
+          <i class="bi bi-mortarboard-fill"></i>
+        </div>
+        <div>
+          <h5 class="offcanvas-title mb-0" id="mobileMenuLabel">Bright Future Academy</h5>
+          <small class="text-muted">Main Menu</small>
+        </div>
+      </div>
+
+      <button
+        type="button"
+        class="btn-close shadow-none"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <div class="offcanvas-body">
+      <div class="mobile-nav-wrap">
+
+        <a href="#" class="mobile-direct-link">Home</a>
+
+        <div class="accordion school-mobile-accordion" id="mobileMegaAccordion">
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingAbout">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseAbout"
+                aria-expanded="false"
+                aria-controls="collapseAbout"
+              >
+                About Us
+              </button>
+            </h2>
+            <div
+              id="collapseAbout"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingAbout"
+              data-bs-parent="#mobileMegaAccordion"
+            >
+              <div class="accordion-body">
+                <div class="mobile-group">
+                  <h6>Who We Are</h6>
+                  <a href="#">Our Story</a>
+                  <a href="#">Mission & Vision</a>
+                  <a href="#">Achievements</a>
+                </div>
+                <div class="mobile-group">
+                  <h6>Leadership</h6>
+                  <a href="#">Principal’s Message</a>
+                  <a href="#">Management Team</a>
+                  <a href="#">Faculty Directory</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingAcademics">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseAcademics"
+                aria-expanded="false"
+                aria-controls="collapseAcademics"
+              >
+                Academics
+              </button>
+            </h2>
+            <div
+              id="collapseAcademics"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingAcademics"
+              data-bs-parent="#mobileMegaAccordion"
+            >
+              <div class="accordion-body">
+                <div class="mobile-group">
+                  <h6>Programs</h6>
+                  <a href="#">Primary School</a>
+                  <a href="#">Middle School</a>
+                  <a href="#">Senior Secondary</a>
+                </div>
+                <div class="mobile-group">
+                  <h6>Resources</h6>
+                  <a href="#">Curriculum</a>
+                  <a href="#">Digital Learning</a>
+                  <a href="#">Assessment System</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingAdmissions">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseAdmissions"
+                aria-expanded="false"
+                aria-controls="collapseAdmissions"
+              >
+                Admissions
+              </button>
+            </h2>
+            <div
+              id="collapseAdmissions"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingAdmissions"
+              data-bs-parent="#mobileMegaAccordion"
+            >
+              <div class="accordion-body">
+                <div class="mobile-group">
+                  <h6>Admission Info</h6>
+                  <a href="#">How to Apply</a>
+                  <a href="#">Eligibility & Documents</a>
+                  <a href="#">Fee Structure</a>
+                  <a href="#">FAQs</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingCampusLife">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseCampusLife"
+                aria-expanded="false"
+                aria-controls="collapseCampusLife"
+              >
+                Campus Life
+              </button>
+            </h2>
+            <div
+              id="collapseCampusLife"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingCampusLife"
+              data-bs-parent="#mobileMegaAccordion"
+            >
+              <div class="accordion-body">
+                <div class="mobile-group">
+                  <h6>Student Life</h6>
+                  <a href="#">Sports</a>
+                  <a href="#">Arts & Culture</a>
+                  <a href="#">Clubs & Societies</a>
+                  <a href="#">Wellness</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+ 
+        <a href="#" class="mobile-direct-link">Facilities</a>
+        <a href="#" class="mobile-direct-link">Gallery</a>
+        <a href="#" class="mobile-direct-link">Contact</a>
+
+        <div class="mobile-admission-card mt-4">
+          <span>Admission Open</span>
+          <h6>Session 2026–27</h6>
+          <p>Apply now and schedule a personalized campus visit.</p>
+          <a href="#" class="btn btn-school-primary w-100">Start Application</a>
+        </div>
+      </div>
+    </div>
+  </div>
+ <style>
+  /* =========================
+   ROOT / GLOBAL
+========================= */
+:root {
+  --school-primary: #123c7a;
+  --school-primary-dark: #0d2c5d;
+  --school-secondary: #1d65c1;
+  --school-accent: #f4b942;
+  --school-bg: #f4f8fc;
+  --school-surface: #ffffff;
+  --school-border: #dbe5f0;
+  --school-text: #1b2b45;
+  --school-muted: #6b7a90;
+  --school-shadow: 0 16px 50px rgba(10, 31, 68, 0.12);
+  --school-shadow-soft: 0 10px 30px rgba(18, 60, 122, 0.08);
+  --school-radius: 18px;
+  --transition-base: all 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(180deg, #f8fbff 0%, #eef4fb 100%);
+  color: var(--school-text);
+}
+
+/* =========================
+   HEADER / NAVBAR
+========================= */
+.school-header {
+  z-index: 1040;
+}
+
+.school-navbar {
+  min-height: 86px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(18, 60, 122, 0.08);
+  box-shadow: 0 6px 22px rgba(16, 46, 92, 0.06);
+}
+
+.school-brand {
+  text-decoration: none;
+  padding: 12px 0;
+}
+
+.school-logo {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--school-primary), var(--school-secondary));
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 24px rgba(29, 101, 193, 0.25);
+  font-size: 1.35rem;
+  flex-shrink: 0;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.school-name {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--school-primary-dark);
+  letter-spacing: 0.2px;
+}
+
+.school-tagline {
+  font-size: 0.78rem;
+  color: var(--school-muted);
+  margin-top: 4px;
+}
+
+.school-nav-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--school-text);
+  font-weight: 600;
+  font-size: 0.96rem;
+  padding: 30px 16px !important;
+  border: 0;
+  background: transparent;
+  transition: var(--transition-base);
+}
+
+.school-nav-link:hover,
+.school-nav-link:focus,
+.school-nav-link.active {
+  color: var(--school-primary);
+}
+
+.school-nav-link::after {
+  content: "";
+  position: absolute;
+  left: 16px;
+  bottom: 18px;
+  width: calc(100% - 32px);
+  height: 2.5px;
+  background: linear-gradient(90deg, var(--school-primary), var(--school-secondary));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+}
+
+.school-nav-link:hover::after,
+.school-nav-link:focus::after,
+.school-nav-link.active::after,
+.nav-item.show-mega > .school-nav-link::after {
+  transform: scaleX(1);
+}
+
+.nav-caret {
+  font-size: 0.8rem;
+  transition: transform 0.25s ease;
+}
+
+.nav-item.show-mega .nav-caret {
+  transform: rotate(180deg);
+}
+
+.nav-cta {
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn-school-primary,
+.btn-school-outline {
+  border-radius: 999px;
+  font-weight: 700;
+  padding: 11px 20px;
+  transition: var(--transition-base);
+}
+
+.btn-school-primary {
+  background: linear-gradient(135deg, var(--school-primary), var(--school-secondary));
+  border: none;
+  color: #fff;
+  box-shadow: 0 12px 24px rgba(18, 60, 122, 0.18);
+}
+
+.btn-school-primary:hover,
+.btn-school-primary:focus {
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 18px 28px rgba(18, 60, 122, 0.25);
+}
+
+.btn-school-outline {
+  border: 1px solid rgba(18, 60, 122, 0.18);
+  color: var(--school-primary);
+  background: #fff;
+}
+
+.btn-school-outline:hover,
+.btn-school-outline:focus {
+  background: #f2f7ff;
+  color: var(--school-primary-dark);
+  transform: translateY(-2px);
+}
+
+/* =========================
+   DESKTOP MEGA MENU
+========================= */
+.has-mega-menu {
+  position: static;
+}
+
+.mega-toggle {
+  cursor: pointer;
+}
+
+.mega-menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: 1035;
+  padding: 10px 14px 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  pointer-events: none;
+  transition:
+    opacity 0.28s ease,
+    transform 0.28s ease,
+    visibility 0.28s ease;
+}
+
+.nav-item.show-mega > .mega-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.mega-menu-inner {
+  background: rgba(255, 255, 255, 0.98);
+  border: 1px solid rgba(18, 60, 122, 0.08);
+  border-radius: 24px;
+  box-shadow: var(--school-shadow);
+  padding: 28px;
+  overflow: hidden;
+}
+
+.mega-column {
+  height: 100%;
+}
+
+.mega-heading {
+  font-size: 0.88rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--school-primary);
+  margin-bottom: 16px;
+}
+
+.mega-link {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  text-decoration: none;
+  padding: 14px 14px;
+  border-radius: 16px;
+  transition: var(--transition-base);
+  border: 1px solid transparent;
+  margin-bottom: 8px;
+}
+
+.mega-link i {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(18, 60, 122, 0.08), rgba(29, 101, 193, 0.12));
+  color: var(--school-primary);
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.mega-link span {
+  display: block;
+  color: var(--school-text);
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.mega-link small {
+  display: block;
+  color: var(--school-muted);
+  line-height: 1.45;
+  font-size: 0.84rem;
+}
+
+.mega-link:hover,
+.mega-link:focus {
+  background: #f8fbff;
+  border-color: rgba(18, 60, 122, 0.08);
+  transform: translateY(-2px);
+}
+
+.mega-highlight-box {
+  background: linear-gradient(180deg, rgba(244, 248, 252, 0.88), rgba(255, 255, 255, 0.98));
+  border: 1px solid rgba(18, 60, 122, 0.08);
+  border-radius: 20px;
+  padding: 18px;
+  box-shadow: var(--school-shadow-soft);
+}
+
+.quick-links-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.quick-links-list li + li {
+  margin-top: 12px;
+}
+
+.quick-links-list a {
+  color: var(--school-text);
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: var(--transition-base);
+}
+
+.quick-links-list a::before {
+  content: "•";
+  color: var(--school-accent);
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.quick-links-list a:hover,
+.quick-links-list a:focus {
+  color: var(--school-primary);
+  transform: translateX(4px);
+}
+
+.featured-card {
+  height: 100%;
+  background: linear-gradient(135deg, var(--school-primary-dark), var(--school-secondary));
+  color: #fff;
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: 0 18px 40px rgba(18, 60, 122, 0.22);
+  position: relative;
+  overflow: hidden;
+}
+
+.featured-card::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -30px;
+  width: 140px;
+  height: 140px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+}
+
+.featured-card h5 {
+  font-weight: 800;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.featured-card p {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.65;
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.featured-badge {
+  display: inline-block;
+  margin-bottom: 12px;
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  padding: 7px 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  position: relative;
+}
+
+.featured-card-academic {
+  background: linear-gradient(135deg, #0e4e9f, #2674da);
+}
+
+/* =========================
+   MOBILE TOGGLER
+========================= */
+.custom-toggler {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.custom-toggler span {
+  width: 24px;
+  height: 2.5px;
+  border-radius: 10px;
+  background: var(--school-primary-dark);
+  display: block;
+}
+
+/* =========================
+   OFFCANVAS MOBILE MENU
+========================= */
+.school-offcanvas {
+  width: min(92vw, 400px);
+  border-left: 1px solid rgba(18, 60, 122, 0.08);
+  background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
+}
+
+.mobile-logo {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  font-size: 1.15rem;
+}
+
+.mobile-nav-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mobile-direct-link {
+  text-decoration: none;
+  color: var(--school-text);
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 14px 2px;
+  border-bottom: 1px solid rgba(18, 60, 122, 0.08);
+  transition: var(--transition-base);
+}
+
+.mobile-direct-link:hover,
+.mobile-direct-link:focus {
+  color: var(--school-primary);
+}
+
+.school-mobile-accordion .accordion-item {
+  border: none;
+  border-bottom: 1px solid rgba(18, 60, 122, 0.08);
+  background: transparent;
+}
+
+.school-mobile-accordion .accordion-button {
+  background: transparent;
+  color: var(--school-text);
+  font-weight: 700;
+  padding: 16px 0;
+  box-shadow: none;
+}
+
+.school-mobile-accordion .accordion-button:not(.collapsed) {
+  color: var(--school-primary);
+  background: transparent;
+}
+
+.school-mobile-accordion .accordion-button:focus {
+  box-shadow: none;
+}
+
+.school-mobile-accordion .accordion-body {
+  padding: 0 0 18px 0;
+}
+
+.mobile-group + .mobile-group {
+  margin-top: 16px;
+}
+
+.mobile-group h6 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--school-primary);
+  margin-bottom: 10px;
+}
+
+.mobile-group a {
+  display: block;
+  text-decoration: none;
+  color: var(--school-muted);
+  padding: 8px 0;
+  font-weight: 600;
+  transition: var(--transition-base);
+}
+
+.mobile-group a:hover,
+.mobile-group a:focus {
+  color: var(--school-primary);
+  padding-left: 6px;
+}
+
+.mobile-admission-card {
+  background: linear-gradient(135deg, rgba(18, 60, 122, 0.96), rgba(29, 101, 193, 0.92));
+  border-radius: 22px;
+  padding: 22px;
+  color: #fff;
+  box-shadow: 0 18px 36px rgba(18, 60, 122, 0.2);
+}
+
+.mobile-admission-card span {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  padding: 6px 10px;
+}
+
+.mobile-admission-card h6 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.mobile-admission-card p {
+  color: rgba(255, 255, 255, 0.88);
+  margin-bottom: 16px;
+}
+
+/* =========================
+   DEMO SECTION
+========================= */
+.demo-hero {
+  min-height: calc(100vh - 86px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+}
+
+.demo-badge {
+  display: inline-block;
+  margin-bottom: 18px;
+  border-radius: 999px;
+  background: rgba(18, 60, 122, 0.08);
+  color: var(--school-primary);
+  padding: 8px 14px;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.demo-hero h1 {
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--school-primary-dark);
+  margin-bottom: 18px;
+}
+
+.demo-hero p {
+  max-width: 720px;
+  margin: 0 auto;
+  color: var(--school-muted);
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+/* =========================
+   FOCUS STATES / ACCESSIBILITY
+========================= */
+a:focus-visible,
+button:focus-visible,
+.accordion-button:focus-visible {
+  outline: 3px solid rgba(29, 101, 193, 0.28);
+  outline-offset: 3px;
+  border-radius: 12px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 1399.98px) {
+  .school-nav-link {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    font-size: 0.92rem;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .school-navbar {
+    min-height: 78px;
+  }
+
+  .school-brand {
+    padding: 10px 0;
+  }
+
+  .school-name {
+    font-size: 1rem;
+  }
+
+  .school-tagline {
+    font-size: 0.74rem;
+  }
+
+  .demo-hero {
+    min-height: calc(100vh - 78px);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .school-logo {
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+  }
+
+  .school-name {
+    font-size: 0.96rem;
+  }
+
+  .school-tagline {
+    display: none;
+  }
+
+  .demo-hero {
+    padding: 60px 16px;
+  }
+
+  .demo-hero p {
+    font-size: 0.98rem;
+  }
+}
+ </style>
+
+<script>
+  /* =========================
+   SCHOOL MEGA MENU SCRIPT
+   - Desktop hover + click support
+   - Keyboard accessibility
+   - Close on outside click / Esc
+========================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+  const desktopBreakpoint = 1200;
+  const megaItems = document.querySelectorAll(".has-mega-menu");
+
+  function isDesktop() {
+    return window.innerWidth >= desktopBreakpoint;
+  }
+
+  function closeAllMegaMenus() {
+    megaItems.forEach((item) => {
+      item.classList.remove("show-mega");
+      const toggle = item.querySelector(".mega-toggle");
+      if (toggle) toggle.setAttribute("aria-expanded", "false");
+    });
+  }
+
+  function openMegaMenu(item) {
+    closeAllMegaMenus();
+    item.classList.add("show-mega");
+    const toggle = item.querySelector(".mega-toggle");
+    if (toggle) toggle.setAttribute("aria-expanded", "true");
+  }
+
+  megaItems.forEach((item) => {
+    const toggle = item.querySelector(".mega-toggle");
+    const menu = item.querySelector(".mega-menu");
+
+    if (!toggle || !menu) return;
+
+    // Click support
+    toggle.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      if (!isDesktop()) return;
+
+      const isOpen = item.classList.contains("show-mega");
+      if (isOpen) {
+        closeAllMegaMenus();
+      } else {
+        openMegaMenu(item);
+      }
+    });
+
+    // Hover support for desktop
+    item.addEventListener("mouseenter", function () {
+      if (!isDesktop()) return;
+      openMegaMenu(item);
+    });
+
+    item.addEventListener("mouseleave", function () {
+      if (!isDesktop()) return;
+      closeAllMegaMenus();
+    });
+
+    // Keyboard support
+    toggle.addEventListener("keydown", function (e) {
+      if (!isDesktop()) return;
+
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        const isOpen = item.classList.contains("show-mega");
+        if (isOpen) {
+          closeAllMegaMenus();
+        } else {
+          openMegaMenu(item);
+        }
+      }
+
+      if (e.key === "ArrowDown") {
+        e.preventDefault();
+        openMegaMenu(item);
+
+        const firstLink = menu.querySelector("a, button");
+        if (firstLink) firstLink.focus();
+      }
+
+      if (e.key === "Escape") {
+        closeAllMegaMenus();
+        toggle.focus();
+      }
+    });
+
+    // Allow Escape to close when inside menu
+    menu.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        closeAllMegaMenus();
+        toggle.focus();
+      }
+    });
+  });
+
+  // Close when clicking outside
+  document.addEventListener("click", function (e) {
+    if (!isDesktop()) return;
+
+    const clickedInsideMega = e.target.closest(".has-mega-menu");
+    if (!clickedInsideMega) {
+      closeAllMegaMenus();
+    }
+  });
+
+  // Close on resize when moving from desktop to mobile or vice versa
+  window.addEventListener("resize", function () {
+    closeAllMegaMenus();
+  });
+
+  // Optional: close mega menu when tabbing away from header
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      closeAllMegaMenus();
+    }
+  });
+});
+</script>
+
+
+
+
+
+
+
+ 
+  
+
+
+
+
+
+
+
+ 
+
+ <!-- =========================
+     COMMON PAGE HEADER
+     Copy-paste ready
+========================= -->
+
+<section class="school-page-header-creative" id="pageHeader">
+  <div class="school-page-header-shape shape-1"></div>
+  <div class="school-page-header-shape shape-2"></div>
+  <div class="school-page-header-shape shape-3"></div>
+  <div class="school-page-header-grid"></div>
+  <div class="school-page-header-wave"></div>
+
+  <div class="container position-relative">
+    <div class="row justify-content-center">
+      <div class="col-xl-8 col-lg-9">
+        <div class="school-page-header-content text-center">
+          
+          <nav class="school-page-breadcrumb" aria-label="breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="divider"><i class="bi bi-chevron-right"></i></span>
+            <span class="active">Academics</span>
+          </nav>
+
+          <span class="school-page-header-badge">
+            <i class="bi bi-stars"></i>
+            Academic Excellence
+          </span>
+
+          <h1 class="school-page-header-title">
+            Academic <span>Programs</span>
+          </h1>
+
+          <p class="school-page-header-subtitle">
+            Explore our comprehensive curriculum, innovative teaching methods,
+            and resources that empower students to excel in their academic
+            journey.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  :root {
+    --school-primary: #123c7a;
+    --school-primary-dark: #0d2c5d;
+    --school-secondary: #1d65c1;
+    --school-accent: #f4b942;
+    --school-bg: #f4f8fc;
+    --school-surface: #ffffff;
+    --school-border: #dbe5f0;
+    --school-text: #1b2b45;
+    --school-muted: #6b7a90;
+    --school-shadow: 0 16px 50px rgba(10, 31, 68, 0.12);
+    --school-shadow-soft: 0 10px 30px rgba(18, 60, 122, 0.08);
+    --school-radius: 18px;
+    --transition-base: all 0.3s ease;
+  }
+
+  .school-page-header-creative {
+    position: relative;
+    overflow: hidden;
+    padding: 95px 0 50px;
+    background:
+      radial-gradient(circle at 15% 20%, rgba(244, 185, 66, 0.16), transparent 22%),
+      radial-gradient(circle at 85% 25%, rgba(29, 101, 193, 0.18), transparent 24%),
+      linear-gradient(135deg, #081c3b 0%, var(--school-primary-dark) 42%, var(--school-primary) 100%);
+    color: #fff;
+    isolation: isolate;
+  }
+
+  .school-page-header-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.045) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.045) 1px, transparent 1px);
+    background-size: 40px 40px;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent 92%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .school-page-header-shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(10px);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .school-page-header-shape.shape-1 {
+    width: 220px;
+    height: 220px;
+    top: -70px;
+    left: -60px;
+    background: radial-gradient(circle, rgba(244, 185, 66, 0.22), transparent 70%);
+    animation: schoolHeaderFloat 9s ease-in-out infinite;
+  }
+
+  .school-page-header-shape.shape-2 {
+    width: 260px;
+    height: 260px;
+    right: -70px;
+    top: -30px;
+    background: radial-gradient(circle, rgba(29, 101, 193, 0.22), transparent 70%);
+    animation: schoolHeaderFloat 12s ease-in-out infinite reverse;
+  }
+
+  .school-page-header-shape.shape-3 {
+    width: 180px;
+    height: 180px;
+    left: 50%;
+    bottom: -70px;
+    transform: translateX(-50%);
+    background: radial-gradient(circle, rgba(255,255,255,0.10), transparent 70%);
+    animation: schoolHeaderPulse 5s ease-in-out infinite;
+  }
+
+  .school-page-header-wave {
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 70px;
+    background:
+      radial-gradient(circle at 15% 0%, rgba(255,255,255,0.08), transparent 28%),
+      linear-gradient(to top, rgba(255,255,255,0.04), transparent);
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .school-page-header-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .school-page-breadcrumb {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    padding: 9px 16px;
+    margin-bottom: 14px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.10);
+    border: 1px solid rgba(255,255,255,0.14);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.10);
+    animation: schoolHeaderFadeUp 0.8s ease both;
+  }
+
+  .school-page-breadcrumb a,
+  .school-page-breadcrumb span {
+    font-size: 0.88rem;
+    line-height: 1;
+  }
+
+  .school-page-breadcrumb a {
+    color: rgba(255,255,255,0.82);
+    text-decoration: none;
+    transition: var(--transition-base);
+  }
+
+  .school-page-breadcrumb a:hover {
+    color: var(--school-accent);
+  }
+
+  .school-page-breadcrumb .divider {
+    color: rgba(255,255,255,0.45);
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .school-page-breadcrumb .divider i {
+    font-size: 0.72rem;
+  }
+
+  .school-page-breadcrumb .active {
+    color: var(--school-accent);
+    font-weight: 700;
+  }
+
+  .school-page-header-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 9px 16px;
+    border-radius: 999px;
+    background: rgba(244, 185, 66, 0.14);
+    border: 1px solid rgba(244, 185, 66, 0.20);
+    color: #ffd36a;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+    box-shadow: 0 12px 28px rgba(244, 185, 66, 0.10);
+    animation: schoolHeaderFadeUp 0.8s ease both;
+    animation-delay: 0.08s;
+  }
+
+  .school-page-header-title {
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    line-height: 1.04;
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    margin-bottom: 10px;
+    color: #fff;
+    animation: schoolHeaderFadeUp 0.85s ease both;
+    animation-delay: 0.16s;
+  }
+
+  .school-page-header-title span {
+    display: inline-block;
+    background: linear-gradient(135deg, #ffffff 0%, #dce8ff 45%, var(--school-accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    text-shadow: 0 12px 30px rgba(255,255,255,0.08);
+  }
+
+  .school-page-header-title span::after {
+    content: "";
+    position: absolute;
+    left: 4%;
+    bottom: 4px;
+    width: 92%;
+    height: 10px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, rgba(244,185,66,0.26), rgba(255,255,255,0.08));
+    z-index: -1;
+  }
+
+  .school-page-header-subtitle {
+    max-width: 700px;
+    margin: 0 auto;
+    color: rgba(255,255,255,0.82);
+    line-height: 1.75;
+    font-size: 0.98rem;
+    animation: schoolHeaderFadeUp 0.9s ease both;
+    animation-delay: 0.24s;
+  }
+
+  @keyframes schoolHeaderFloat {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(16px); }
+  }
+
+  @keyframes schoolHeaderPulse {
+    0%, 100% { transform: translateX(-50%) scale(1); opacity: 0.7; }
+    50% { transform: translateX(-50%) scale(1.08); opacity: 1; }
+  }
+
+  @keyframes schoolHeaderFadeUp {
+    0% {
+      opacity: 0;
+      transform: translateY(26px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .school-page-header-creative {
+      padding: 88px 0 46px;
+    }
+
+    .school-page-header-title {
+      font-size: clamp(1.9rem, 7vw, 3rem);
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .school-page-header-creative {
+      padding: 82px 0 42px;
+    }
+
+    .school-page-breadcrumb {
+      padding: 8px 14px;
+      margin-bottom: 12px;
+    }
+
+    .school-page-header-badge {
+      font-size: 0.84rem;
+      padding: 8px 14px;
+    }
+
+    .school-page-header-subtitle {
+      font-size: 0.93rem;
+      line-height: 1.7;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const pageHeader = document.querySelector(".school-page-header-creative");
+    if (!pageHeader || window.innerWidth <= 991) return;
+
+    pageHeader.addEventListener("mousemove", function (e) {
+      const rect = pageHeader.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      const moveX = (x / rect.width - 0.5) * 12;
+      const moveY = (y / rect.height - 0.5) * 10;
+
+      const shapes = pageHeader.querySelectorAll(".school-page-header-shape");
+      shapes.forEach((shape, index) => {
+        const factor = (index + 1) * 0.6;
+        shape.style.transform = `translate(${moveX * factor}px, ${moveY * factor}px)`;
+      });
+    });
+
+    pageHeader.addEventListener("mouseleave", function () {
+      const shapes = pageHeader.querySelectorAll(".school-page-header-shape");
+      shapes.forEach((shape) => {
+        shape.style.transform = "";
+      });
+    });
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+ <section class="primary-school-spotlight" id="primarySchool">
+  <div class="ps-orb ps-orb-1"></div>
+  <div class="ps-orb ps-orb-2"></div>
+  <div class="ps-dots"></div>
+
+  <div class="container position-relative">
+    <div class="row align-items-center g-4 g-lg-5">
+      <div class="col-lg-6">
+        <div class="ps-content">
+          <span class="ps-eyebrow ps-reveal">
+            <i class="bi bi-balloon-heart-fill"></i>
+            Primary School
+          </span>
+
+          <h2 class="ps-title ps-reveal">
+            Where <span>curiosity</span> becomes confidence
+          </h2>
+
+          <p class="ps-text ps-reveal">
+            At Bright Future Academy, our Primary School years are designed to make learning joyful,
+            engaging, and meaningful. We help children build strong academic foundations while encouraging
+            creativity, communication, discipline, and independent thinking.
+          </p>
+
+          <div class="ps-ribbon ps-reveal">
+            <div class="ps-ribbon-line"></div>
+            <div class="ps-ribbon-card">
+              <strong>Learning through discovery</strong>
+              <span>Interactive classrooms, caring teachers, and child-centered growth.</span>
+            </div>
+          </div>
+
+          <div class="ps-feature-grid">
+            <div class="ps-feature ps-reveal">
+              <div class="ps-feature-icon">
+                <i class="bi bi-pencil-square"></i>
+              </div>
+              <div>
+                <h3>Strong Basics</h3>
+                <p>Reading, writing, numeracy, and concept clarity from the start.</p>
+              </div>
+            </div>
+
+            <div class="ps-feature ps-reveal">
+              <div class="ps-feature-icon accent">
+                <i class="bi bi-palette-fill"></i>
+              </div>
+              <div>
+                <h3>Creative Expression</h3>
+                <p>Art, activity-based learning, and imagination-led exploration.</p>
+              </div>
+            </div>
+
+            <div class="ps-feature ps-reveal">
+              <div class="ps-feature-icon">
+                <i class="bi bi-people-fill"></i>
+              </div>
+              <div>
+                <h3>Personal Attention</h3>
+                <p>A supportive environment where every child feels seen and encouraged.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="ps-visual ps-reveal" id="psVisual">
+          <div class="ps-stage">
+            <div class="ps-photo-main">
+              <img loading="lazy" src="teacher_classroom.webp" alt="Primary school students learning together">
+            </div>
+
+            <div class="ps-floating-card ps-card-top">
+              <span class="ps-mini-icon"><i class="bi bi-stars"></i></span>
+              <div>
+                <strong>Joyful Learning</strong>
+                <small>Safe, vibrant, and inspiring classrooms</small>
+              </div>
+            </div>
+
+            <div class="ps-floating-card ps-card-bottom">
+              <span class="ps-mini-icon accent"><i class="bi bi-lightbulb-fill"></i></span>
+              <div>
+                <strong>Future Skills</strong>
+                <small>Confidence, communication, and curiosity</small>
+              </div>
+            </div>
+
+            <div class="ps-circle-note">
+              <span>ABC</span>
+              <strong>Primary</strong>
+              <small>Foundation Years</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    :root {
+      --school-primary: #123c7a;
+      --school-primary-dark: #0d2c5d;
+      --school-secondary: #1d65c1;
+      --school-accent: #f4b942;
+      --school-bg: #f4f8fc;
+      --school-surface: #ffffff;
+      --school-border: #dbe5f0;
+      --school-text: #1b2b45;
+      --school-muted: #6b7a90;
+      --school-shadow: 0 16px 50px rgba(10, 31, 68, 0.12);
+      --school-shadow-soft: 0 10px 30px rgba(18, 60, 122, 0.08);
+      --school-radius: 18px;
+      --transition-base: all 0.3s ease;
+    }
+
+    .primary-school-spotlight {
+      position: relative;
+      overflow: hidden;
+      padding: 100px 0;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(244, 185, 66, 0.12), transparent 20%),
+        radial-gradient(circle at 88% 26%, rgba(29, 101, 193, 0.12), transparent 22%),
+        linear-gradient(180deg, #ffffff 0%, var(--school-bg) 100%);
+      isolation: isolate;
+    }
+
+    .ps-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(10px);
+      pointer-events: none;
+      z-index: 0;
+      animation: psFloat 10s ease-in-out infinite;
+    }
+
+    .ps-orb-1 {
+      width: 260px;
+      height: 260px;
+      left: -80px;
+      top: 40px;
+      background: radial-gradient(circle, rgba(29, 101, 193, 0.14), transparent 70%);
+    }
+
+    .ps-orb-2 {
+      width: 280px;
+      height: 280px;
+      right: -90px;
+      bottom: 10px;
+      background: radial-gradient(circle, rgba(244, 185, 66, 0.18), transparent 70%);
+      animation-delay: -3s;
+    }
+
+    .ps-dots {
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(rgba(18, 60, 122, 0.07) 1px, transparent 1px);
+      background-size: 18px 18px;
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,0.18), transparent 85%);
+      opacity: 0.55;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .ps-content,
+    .ps-visual {
+      position: relative;
+      z-index: 2;
+    }
+
+    .ps-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: rgba(244, 185, 66, 0.12);
+      border: 1px solid rgba(244, 185, 66, 0.22);
+      color: #a87514;
+      font-weight: 700;
+      font-size: 0.92rem;
+      margin-bottom: 1rem;
+      box-shadow: var(--school-shadow-soft);
+    }
+
+    .ps-title {
+      margin: 0 0 16px;
+      font-size: clamp(2.1rem, 4.6vw, 4rem);
+      line-height: 1.02;
+      font-weight: 800;
+      letter-spacing: -0.05em;
+      color: var(--school-text);
+      max-width: 620px;
+    }
+
+    .ps-title span {
+      background: linear-gradient(135deg, var(--school-primary), var(--school-secondary), var(--school-accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .ps-text {
+      max-width: 610px;
+      color: var(--school-muted);
+      line-height: 1.9;
+      font-size: 1rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .ps-ribbon {
+      display: flex;
+      align-items: stretch;
+      gap: 14px;
+      margin-bottom: 1.5rem;
+      max-width: 620px;
+    }
+
+    .ps-ribbon-line {
+      width: 12px;
+      border-radius: 999px;
+      background: linear-gradient(180deg, var(--school-primary), var(--school-secondary), var(--school-accent));
+      box-shadow: 0 10px 20px rgba(18, 60, 122, 0.12);
+    }
+
+    .ps-ribbon-card {
+      flex: 1;
+      padding: 1rem 1.1rem;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.82);
+      border: 1px solid rgba(255,255,255,0.9);
+      box-shadow: var(--school-shadow-soft);
+      backdrop-filter: blur(12px);
+    }
+
+    .ps-ribbon-card strong {
+      display: block;
+      color: var(--school-text);
+      margin-bottom: 4px;
+      font-size: 1rem;
+    }
+
+    .ps-ribbon-card span {
+      color: var(--school-muted);
+      line-height: 1.7;
+      font-size: 0.93rem;
+    }
+
+    .ps-feature-grid {
+      display: grid;
+      gap: 14px;
+      max-width: 620px;
+    }
+
+    .ps-feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 1rem;
+      border-radius: 22px;
+      background: rgba(255,255,255,0.82);
+      border: 1px solid rgba(255,255,255,0.92);
+      box-shadow: var(--school-shadow-soft);
+      backdrop-filter: blur(10px);
+      transition: var(--transition-base);
+    }
+
+    .ps-feature:hover {
+      transform: translateX(8px);
+      box-shadow: 0 18px 36px rgba(10, 31, 68, 0.10);
+    }
+
+    .ps-feature-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      background: linear-gradient(135deg, var(--school-primary), var(--school-secondary));
+      color: #fff;
+      font-size: 1.08rem;
+      box-shadow: 0 12px 24px rgba(29, 101, 193, 0.18);
+    }
+
+    .ps-feature-icon.accent {
+      background: linear-gradient(135deg, var(--school-accent), #f0a81f);
+      color: var(--school-primary-dark);
+      box-shadow: 0 12px 24px rgba(244, 185, 66, 0.22);
+    }
+
+    .ps-feature h3 {
+      margin: 0 0 4px;
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--school-text);
+    }
+
+    .ps-feature p {
+      margin: 0;
+      font-size: 0.93rem;
+      line-height: 1.7;
+      color: var(--school-muted);
+    }
+
+    .ps-stage {
+      position: relative;
+      min-height: 620px;
+      padding: 18px;
+      border-radius: 34px;
+      background: rgba(255,255,255,0.7);
+      border: 1px solid rgba(255,255,255,0.9);
+      box-shadow: var(--school-shadow);
+      backdrop-filter: blur(14px);
+      overflow: hidden;
+    }
+
+    .ps-photo-main {
+      position: relative;
+      width: 82%;
+      margin-left: auto;
+      border-radius: 26px;
+      overflow: hidden;
+      box-shadow: 0 24px 50px rgba(10, 31, 68, 0.14);
+    }
+
+    .ps-photo-main::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(13,44,93,0.02), rgba(13,44,93,0.18));
+    }
+
+    .ps-photo-main img {
+      width: 100%;
+      height: 540px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.9s ease;
+    }
+
+    .ps-stage:hover .ps-photo-main img {
+      transform: scale(1.06);
+    }
+
+    .ps-floating-card {
+      position: absolute;
+      max-width: 230px;
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.9);
+      border: 1px solid rgba(255,255,255,0.92);
+      box-shadow: var(--school-shadow-soft);
+      backdrop-filter: blur(12px);
+      animation: psCardFloat 5.5s ease-in-out infinite;
+    }
+
+    .ps-card-top {
+      top: 34px;
+      left: 18px;
+    }
+
+    .ps-card-bottom {
+      bottom: 34px;
+      left: 34px;
+      animation-delay: -1.2s;
+    }
+
+    .ps-mini-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
+      display: inline-grid;
+      place-items: center;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, var(--school-primary), var(--school-secondary));
+      color: #fff;
+      font-size: 0.95rem;
+    }
+
+    .ps-mini-icon.accent {
+      background: linear-gradient(135deg, var(--school-accent), #f0a81f);
+      color: var(--school-primary-dark);
+    }
+
+    .ps-floating-card strong {
+      display: block;
+      color: var(--school-text);
+      font-size: 0.96rem;
+      margin-bottom: 4px;
+    }
+
+    .ps-floating-card small {
+      display: block;
+      color: var(--school-muted);
+      line-height: 1.5;
+      font-size: 0.86rem;
+    }
+
+    .ps-circle-note {
+      position: absolute;
+      right: 24px;
+      bottom: 22px;
+      width: 128px;
+      height: 128px;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(135deg, rgba(18,60,122,0.96), rgba(29,101,193,0.92));
+      color: #fff;
+      box-shadow: 0 20px 40px rgba(18, 60, 122, 0.22);
+      border: 4px solid rgba(255,255,255,0.82);
+      animation: psPulse 5s ease-in-out infinite;
+    }
+
+    .ps-circle-note span {
+      font-size: 0.78rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      opacity: 0.78;
+    }
+
+    .ps-circle-note strong {
+      font-size: 1.15rem;
+      line-height: 1.1;
+      margin: 3px 0;
+      font-weight: 800;
+    }
+
+    .ps-circle-note small {
+      font-size: 0.78rem;
+      opacity: 0.82;
+    }
+
+    .ps-reveal {
+      opacity: 0;
+      transform: translateY(34px);
+      transition: opacity 0.9s ease, transform 0.9s ease;
+    }
+
+    .ps-reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes psFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-18px); }
+    }
+
+    @keyframes psCardFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    @keyframes psPulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    @media (max-width: 991.98px) {
+      .primary-school-spotlight {
+        padding: 82px 0;
+        text-align: center;
+      }
+
+      .ps-title,
+      .ps-text,
+      .ps-ribbon,
+      .ps-feature-grid {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .ps-feature,
+      .ps-ribbon-card {
+        text-align: left;
+      }
+
+      .ps-stage {
+        min-height: auto;
+      }
+
+      .ps-photo-main {
+        width: 100%;
+      }
+
+      .ps-photo-main img {
+        height: 420px;
+      }
+
+      .ps-floating-card,
+      .ps-circle-note {
+        position: static;
+        max-width: 100%;
+        width: 100%;
+        margin-top: 12px;
+      }
+
+      .ps-circle-note {
+        height: auto;
+        border-radius: 24px;
+        padding: 18px;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .primary-school-spotlight {
+        padding: 68px 0;
+      }
+
+      .ps-title {
+        font-size: clamp(1.9rem, 8vw, 3rem);
+      }
+
+      .ps-text {
+        font-size: 0.96rem;
+        line-height: 1.8;
+      }
+
+      .ps-stage {
+        padding: 12px;
+        border-radius: 24px;
+      }
+
+      .ps-photo-main {
+        border-radius: 18px;
+      }
+
+      .ps-photo-main img {
+        height: 300px;
+      }
+
+      .ps-feature {
+        padding: 0.95rem;
+      }
+
+      .ps-ribbon {
+        gap: 10px;
+      }
+
+      .ps-ribbon-line {
+        width: 8px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .ps-orb,
+      .ps-floating-card,
+      .ps-circle-note,
+      .ps-reveal,
+      .ps-photo-main img {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const section = document.getElementById("primarySchool");
+      if (!section) return;
+
+      const reveals = section.querySelectorAll(".ps-reveal");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+          if (entry.isIntersecting) {
+            entry.target.style.transitionDelay = `${index * 90}ms`;
+            entry.target.classList.add("is-visible");
+          }
+        });
+      }, { threshold: 0.18 });
+
+      reveals.forEach((item) => observer.observe(item));
+
+      const visual = document.getElementById("psVisual");
+      if (visual && window.innerWidth > 991) {
+        visual.addEventListener("mousemove", (e) => {
+          const rect = visual.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+
+          const rotateY = ((x / rect.width) - 0.5) * 7;
+          const rotateX = ((y / rect.height) - 0.5) * -5;
+
+          visual.style.transform = `perspective(1200px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        });
+
+        visual.addEventListener("mouseleave", () => {
+          visual.style.transform = "";
+        });
+      }
+    });
+  </script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="middle-school-spotlight" id="middleSchool">
+  <div class="ms-orb ms-orb-1"></div>
+  <div class="ms-orb ms-orb-2"></div>
+  <div class="ms-dots"></div>
+
+  <div class="container position-relative">
+    <div class="row align-items-center g-4 g-lg-5">
+      <!-- Left Visual -->
+      <div class="col-lg-6 order-2 order-lg-1">
+        <div class="ms-visual ms-reveal" id="msVisual">
+          <div class="ms-stage">
+            <div class="ms-photo-main">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=1200&q=80" alt="Middle school students learning in classroom">
+            </div>
+
+            <div class="ms-floating-card ms-card-top">
+              <span class="ms-mini-icon"><i class="bi bi-diagram-3-fill"></i></span>
+              <div>
+                <strong>Stronger Concepts</strong>
+                <small>Deeper understanding with guided exploration</small>
+              </div>
+            </div>
+
+            <div class="ms-floating-card ms-card-bottom">
+              <span class="ms-mini-icon accent"><i class="bi bi-compass-fill"></i></span>
+              <div>
+                <strong>Growing Independence</strong>
+                <small>Confidence, responsibility, and skill-building</small>
+              </div>
+            </div>
+
+            <div class="ms-circle-note">
+              <span>ABC</span>
+              <strong>Middle</strong>
+              <small>Growth Years</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Content -->
+      <div class="col-lg-6 order-1 order-lg-2">
+        <div class="ms-content">
+          <span class="ms-eyebrow ms-reveal">
+            <i class="bi bi-journal-richtext"></i>
+            Middle School
+          </span>
+
+          <h2 class="ms-title ms-reveal">
+            Where <span>foundation</span> grows into focused learning
+          </h2>
+
+          <p class="ms-text ms-reveal">
+            At Bright Future Academy, our Middle School program helps students transition
+            from basic learning to deeper academic understanding with confidence, curiosity,
+            and independence.
+          </p>
+
+          <div class="ms-ribbon ms-reveal">
+            <div class="ms-ribbon-line"></div>
+            <div class="ms-ribbon-card">
+              <strong>Learning with direction</strong>
+              <span>Structured academics, critical thinking, and well-rounded development.</span>
+            </div>
+          </div>
+
+          <div class="ms-feature-grid">
+            <div class="ms-feature ms-reveal">
+              <div class="ms-feature-icon">
+                <i class="bi bi-book-fill"></i>
+              </div>
+              <div>
+                <h3>Concept Clarity</h3>
+                <p>Building stronger subject understanding across academics.</p>
+              </div>
+            </div>
+
+            <div class="ms-feature ms-reveal">
+              <div class="ms-feature-icon accent">
+                <i class="bi bi-lightbulb-fill"></i>
+              </div>
+              <div>
+                <h3>Analytical Thinking</h3>
+                <p>Encouraging logic, inquiry, and confident problem-solving skills.</p>
+              </div>
+            </div>
+
+            <div class="ms-feature ms-reveal">
+              <div class="ms-feature-icon">
+                <i class="bi bi-people-fill"></i>
+              </div>
+              <div>
+                <h3>Balanced Growth</h3>
+                <p>Supporting discipline, teamwork, creativity, and self-expression.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    :root {
+      --school-primary: #123c7a;
+      --school-primary-dark: #0d2c5d;
+      --school-secondary: #1d65c1;
+      --school-accent: #f4b942;
+      --school-bg: #f4f8fc;
+      --school-surface: #ffffff;
+      --school-border: #dbe5f0;
+      --school-text: #1b2b45;
+      --school-muted: #6b7a90;
+      --school-shadow: 0 16px 50px rgba(10, 31, 68, 0.12);
+      --school-shadow-soft: 0 10px 30px rgba(18, 60, 122, 0.08);
+      --school-radius: 18px;
+      --transition-base: all 0.3s ease;
+    }
+
+    .middle-school-spotlight {
+      position: relative;
+      overflow: hidden;
+      padding: 100px 0;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(244, 185, 66, 0.12), transparent 20%),
+        radial-gradient(circle at 88% 26%, rgba(29, 101, 193, 0.12), transparent 22%),
+        linear-gradient(180deg, #ffffff 0%, var(--school-bg) 100%);
+      isolation: isolate;
+    }
+
+    .ms-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(10px);
+      pointer-events: none;
+      z-index: 0;
+      animation: msFloat 10s ease-in-out infinite;
+    }
+
+    .ms-orb-1 {
+      width: 260px;
+      height: 260px;
+      right: -80px;
+      top: 40px;
+      background: radial-gradient(circle, rgba(29, 101, 193, 0.14), transparent 70%);
+    }
+
+    .ms-orb-2 {
+      width: 280px;
+      height: 280px;
+      left: -90px;
+      bottom: 10px;
+      background: radial-gradient(circle, rgba(244, 185, 66, 0.18), transparent 70%);
+      animation-delay: -3s;
+    }
+
+    .ms-dots {
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(rgba(18, 60, 122, 0.07) 1px, transparent 1px);
+      background-size: 18px 18px;
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,0.18), transparent 85%);
+      opacity: 0.55;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .ms-content,
+    .ms-visual {
+      position: relative;
+      z-index: 2;
+    }
+
+    .ms-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: rgba(244, 185, 66, 0.12);
+      border: 1px solid rgba(244, 185, 66, 0.22);
+      color: #a87514;
+      font-weight: 700;
+      font-size: 0.92rem;
+      margin-bottom: 1rem;
+      box-shadow: var(--school-shadow-soft);
+    }
+
+    .ms-title {
+      margin: 0 0 16px;
+      font-size: clamp(2.1rem, 4.6vw, 4rem);
+      line-height: 1.02;
+      font-weight: 800;
+      letter-spacing: -0.05em;
+      color: var(--school-text);
+      max-width: 620px;
+    }
+
+    .ms-title span {
+      background: linear-gradient(135deg, var(--school-primary), var(--school-secondary), var(--school-accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .ms-text {
+      max-width: 610px;
+      color: var(--school-muted);
+      line-height: 1.9;
+      font-size: 1rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .ms-ribbon {
+      display: flex;
+      align-items: stretch;
+      gap: 14px;
+      margin-bottom: 1.5rem;
+      max-width: 620px;
+    }
+
+    .ms-ribbon-line {
+      width: 12px;
+      border-radius: 999px;
+      background: linear-gradient(180deg, var(--school-primary), var(--school-secondary), var(--school-accent));
+      box-shadow: 0 10px 20px rgba(18, 60, 122, 0.12);
+    }
+
+    .ms-ribbon-card {
+      flex: 1;
+      padding: 1rem 1.1rem;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.82);
+      border: 1px solid rgba(255,255,255,0.9);
+      box-shadow: var(--school-shadow-soft);
+      backdrop-filter: blur(12px);
+    }
+
+    .ms-ribbon-card strong {
+      display: block;
+      color: var(--school-text);
+      margin-bottom: 4px;
+      font-size: 1rem;
+    }
+
+    .ms-ribbon-card span {
+      color: var(--school-muted);
+      line-height: 1.7;
+      font-size: 0.93rem;
+    }
+
+    .ms-feature-grid {
+      display: grid;
+      gap: 14px;
+      max-width: 620px;
+    }
+
+    .ms-feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 1rem;
+      border-radius: 22px;
+      background: rgba(255,255,255,0.82);
+      border: 1px solid rgba(255,255,255,0.92);
+      box-shadow: var(--school-shadow-soft);
+      backdrop-filter: blur(10px);
+      transition: var(--transition-base);
+    }
+
+    .ms-feature:hover {
+      transform: translateX(-8px);
+      box-shadow: 0 18px 36px rgba(10, 31, 68, 0.10);
+    }
+
+    .ms-feature-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      background: linear-gradient(135deg, var(--school-primary), var(--school-secondary));
+      color: #fff;
+      font-size: 1.08rem;
+      box-shadow: 0 12px 24px rgba(29, 101, 193, 0.18);
+    }
+
+    .ms-feature-icon.accent {
+      background: linear-gradient(135deg, var(--school-accent), #f0a81f);
+      color: var(--school-primary-dark);
+      box-shadow: 0 12px 24px rgba(244, 185, 66, 0.22);
+    }
+
+    .ms-feature h3 {
+      margin: 0 0 4px;
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--school-text);
+    }
+
+    .ms-feature p {
+      margin: 0;
+      font-size: 0.93rem;
+      line-height: 1.7;
+      color: var(--school-muted);
+    }
+
+    .ms-stage {
+      position: relative;
+      min-height: 620px;
+      padding: 18px;
+      border-radius: 34px;
+      background: rgba(255,255,255,0.7);
+      border: 1px solid rgba(255,255,255,0.9);
+      box-shadow: var(--school-shadow);
+      backdrop-filter: blur(14px);
+      overflow: hidden;
+    }
+
+    .ms-photo-main {
+      position: relative;
+      width: 82%;
+      margin-right: auto;
+      border-radius: 26px;
+      overflow: hidden;
+      box-shadow: 0 24px 50px rgba(10, 31, 68, 0.14);
+    }
+
+    .ms-photo-main::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(13,44,93,0.02), rgba(13,44,93,0.18));
+    }
+
+    .ms-photo-main img {
+      width: 100%;
+      height: 540px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.9s ease;
+    }
+
+    .ms-stage:hover .ms-photo-main img {
+      transform: scale(1.06);
+    }
+
+    .ms-floating-card {
+      position: absolute;
+      max-width: 230px;
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.9);
+      border: 1px solid rgba(255,255,255,0.92);
+      box-shadow: var(--school-shadow-soft);
+      backdrop-filter: blur(12px);
+      animation: msCardFloat 5.5s ease-in-out infinite;
+    }
+
+    .ms-card-top {
+      top: 34px;
+      right: 18px;
+    }
+
+    .ms-card-bottom {
+      bottom: 34px;
+      right: 34px;
+      animation-delay: -1.2s;
+    }
+
+    .ms-mini-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
+      display: inline-grid;
+      place-items: center;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, var(--school-primary), var(--school-secondary));
+      color: #fff;
+      font-size: 0.95rem;
+    }
+
+    .ms-mini-icon.accent {
+      background: linear-gradient(135deg, var(--school-accent), #f0a81f);
+      color: var(--school-primary-dark);
+    }
+
+    .ms-floating-card strong {
+      display: block;
+      color: var(--school-text);
+      font-size: 0.96rem;
+      margin-bottom: 4px;
+    }
+
+    .ms-floating-card small {
+      display: block;
+      color: var(--school-muted);
+      line-height: 1.5;
+      font-size: 0.86rem;
+    }
+
+    .ms-circle-note {
+      position: absolute;
+      left: 24px;
+      bottom: 22px;
+      width: 128px;
+      height: 128px;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(135deg, rgba(18,60,122,0.96), rgba(29,101,193,0.92));
+      color: #fff;
+      box-shadow: 0 20px 40px rgba(18, 60, 122, 0.22);
+      border: 4px solid rgba(255,255,255,0.82);
+      animation: msPulse 5s ease-in-out infinite;
+    }
+
+    .ms-circle-note span {
+      font-size: 0.78rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      opacity: 0.78;
+    }
+
+    .ms-circle-note strong {
+      font-size: 1.15rem;
+      line-height: 1.1;
+      margin: 3px 0;
+      font-weight: 800;
+    }
+
+    .ms-circle-note small {
+      font-size: 0.78rem;
+      opacity: 0.82;
+    }
+
+    .ms-reveal {
+      opacity: 0;
+      transform: translateY(34px);
+      transition: opacity 0.9s ease, transform 0.9s ease;
+    }
+
+    .ms-reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes msFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-18px); }
+    }
+
+    @keyframes msCardFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    @keyframes msPulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    @media (max-width: 991.98px) {
+      .middle-school-spotlight {
+        padding: 82px 0;
+        text-align: center;
+      }
+
+      .ms-title,
+      .ms-text,
+      .ms-ribbon,
+      .ms-feature-grid {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .ms-feature,
+      .ms-ribbon-card {
+        text-align: left;
+      }
+
+      .ms-stage {
+        min-height: auto;
+      }
+
+      .ms-photo-main {
+        width: 100%;
+      }
+
+      .ms-photo-main img {
+        height: 420px;
+      }
+
+      .ms-floating-card,
+      .ms-circle-note {
+        position: static;
+        max-width: 100%;
+        width: 100%;
+        margin-top: 12px;
+      }
+
+      .ms-circle-note {
+        height: auto;
+        border-radius: 24px;
+        padding: 18px;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .middle-school-spotlight {
+        padding: 68px 0;
+      }
+
+      .ms-title {
+        font-size: clamp(1.9rem, 8vw, 3rem);
+      }
+
+      .ms-text {
+        font-size: 0.96rem;
+        line-height: 1.8;
+      }
+
+      .ms-stage {
+        padding: 12px;
+        border-radius: 24px;
+      }
+
+      .ms-photo-main {
+        border-radius: 18px;
+      }
+
+      .ms-photo-main img {
+        height: 300px;
+      }
+
+      .ms-feature {
+        padding: 0.95rem;
+      }
+
+      .ms-ribbon {
+        gap: 10px;
+      }
+
+      .ms-ribbon-line {
+        width: 8px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .ms-orb,
+      .ms-floating-card,
+      .ms-circle-note,
+      .ms-reveal,
+      .ms-photo-main img {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const section = document.getElementById("middleSchool");
+      if (!section) return;
+
+      const reveals = section.querySelectorAll(".ms-reveal");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+          if (entry.isIntersecting) {
+            entry.target.style.transitionDelay = `${index * 90}ms`;
+            entry.target.classList.add("is-visible");
+          }
+        });
+      }, { threshold: 0.18 });
+
+      reveals.forEach((item) => observer.observe(item));
+
+      const visual = document.getElementById("msVisual");
+      if (visual && window.innerWidth > 991) {
+        visual.addEventListener("mousemove", (e) => {
+          const rect = visual.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+
+          const rotateY = ((x / rect.width) - 0.5) * 7;
+          const rotateX = ((y / rect.height) - 0.5) * -5;
+
+          visual.style.transform = `perspective(1200px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        });
+
+        visual.addEventListener("mouseleave", () => {
+          visual.style.transform = "";
+        });
+      }
+    });
+  </script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="senior-secondary-spotlight" id="seniorSecondary">
+  <div class="ss-orb ss-orb-1"></div>
+  <div class="ss-orb ss-orb-2"></div>
+  <div class="ss-grid"></div>
+
+  <div class="container position-relative">
+    <div class="row align-items-center g-4 g-lg-5">
+      <!-- Left Content -->
+      <div class="col-lg-6">
+        <div class="ss-content">
+          <span class="ss-eyebrow ss-reveal">
+            <i class="bi bi-mortarboard-fill"></i>
+            Senior Secondary School
+          </span>
+
+          <h2 class="ss-title ss-reveal">
+            Where <span>ambition</span> meets direction
+          </h2>
+
+          <p class="ss-text ss-reveal">
+            At Bright Future Academy, our Senior Secondary program prepares students for
+            higher education, career pathways, and real-world success with focused academic depth
+            and future-oriented learning.
+          </p>
+
+          <div class="ss-ribbon ss-reveal">
+            <div class="ss-ribbon-line"></div>
+            <div class="ss-ribbon-card">
+              <strong>Learning with purpose</strong>
+              <span>Advanced academics, career readiness, and confident decision-making.</span>
+            </div>
+          </div>
+
+          <div class="ss-feature-grid">
+            <div class="ss-feature ss-reveal">
+              <div class="ss-feature-icon">
+                <i class="bi bi-journal-bookmark-fill"></i>
+              </div>
+              <div>
+                <h3>Academic Excellence</h3>
+                <p>Strong preparation across science, commerce, and humanities streams.</p>
+              </div>
+            </div>
+
+            <div class="ss-feature ss-reveal">
+              <div class="ss-feature-icon accent">
+                <i class="bi bi-graph-up-arrow"></i>
+              </div>
+              <div>
+                <h3>Career Guidance</h3>
+                <p>Helping students make informed choices for university and beyond.</p>
+              </div>
+            </div>
+
+            <div class="ss-feature ss-reveal">
+              <div class="ss-feature-icon">
+                <i class="bi bi-lightbulb-fill"></i>
+              </div>
+              <div>
+                <h3>Leadership & Confidence</h3>
+                <p>Encouraging responsibility, critical thinking, and independent growth.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Visual -->
+      <div class="col-lg-6">
+        <div class="ss-visual ss-reveal" id="ssVisual">
+          <div class="ss-stage">
+            <div class="ss-photo-main">
+              <img loading="lazy" src="https://us.123rf.com/450wm/espies/espies2003/espies200300065/142771058-indian-school-boy-and-girl-or-science-student-in-uniform-using-molecular-model-kit-for-studying.jpg?ver=6" alt="Senior secondary students on campus">
+            </div>
+
+            <div class="ss-floating-card ss-card-top">
+              <span class="ss-mini-icon"><i class="bi bi-bullseye"></i></span>
+              <div>
+                <strong>Focused Preparation</strong>
+                <small>Clarity, consistency, and higher academic goals</small>
+              </div>
+            </div>
+
+            <div class="ss-floating-card ss-card-bottom">
+              <span class="ss-mini-icon accent"><i class="bi bi-rocket-takeoff-fill"></i></span>
+              <div>
+                <strong>Future Ready</strong>
+                <small>University pathways and life beyond school</small>
+              </div>
+            </div>
+
+            <div class="ss-circle-note">
+              <span>ABC</span>
+              <strong>Senior</strong>
+              <small>Career Years</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    :root {
+      --school-primary: #123c7a;
+      --school-primary-dark: #0d2c5d;
+      --school-secondary: #1d65c1;
+      --school-accent: #f4b942;
+      --school-bg: #f4f8fc;
+      --school-surface: #ffffff;
+      --school-border: #dbe5f0;
+      --school-text: #1b2b45;
+      --school-muted: #6b7a90;
+      --school-shadow: 0 16px 50px rgba(10, 31, 68, 0.12);
+      --school-shadow-soft: 0 10px 30px rgba(18, 60, 122, 0.08);
+      --school-radius: 18px;
+      --transition-base: all 0.3s ease;
+    }
+
+    .senior-secondary-spotlight {
+      position: relative;
+      overflow: hidden;
+      padding: 100px 0;
+      background:
+        radial-gradient(circle at 14% 18%, rgba(29, 101, 193, 0.10), transparent 22%),
+        radial-gradient(circle at 86% 24%, rgba(244, 185, 66, 0.14), transparent 22%),
+        linear-gradient(180deg, #ffffff 0%, var(--school-bg) 100%);
+      isolation: isolate;
+    }
+
+    .ss-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(10px);
+      pointer-events: none;
+      z-index: 0;
+      animation: ssFloat 10s ease-in-out infinite;
+    }
+
+    .ss-orb-1 {
+      width: 260px;
+      height: 260px;
+      left: -80px;
+      top: 20px;
+      background: radial-gradient(circle, rgba(29, 101, 193, 0.15), transparent 70%);
+    }
+
+    .ss-orb-2 {
+      width: 290px;
+      height: 290px;
+      right: -90px;
+      bottom: 0;
+      background: radial-gradient(circle, rgba(244, 185, 66, 0.18), transparent 70%);
+      animation-delay: -3s;
+    }
+
+    .ss-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(18, 60, 122, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(18, 60, 122, 0.035) 1px, transparent 1px);
+      background-size: 22px 22px;
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,0.15), transparent 88%);
+      opacity: 0.6;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .ss-content,
+    .ss-visual {
+      position: relative;
+      z-index: 2;
+    }
+
+    .ss-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: rgba(244, 185, 66, 0.12);
+      border: 1px solid rgba(244, 185, 66, 0.22);
+      color: #a87514;
+      font-weight: 700;
+      font-size: 0.92rem;
+      margin-bottom: 1rem;
+      box-shadow: var(--school-shadow-soft);
+    }
+
+    .ss-title {
+      margin: 0 0 16px;
+      font-size: clamp(2.1rem, 4.6vw, 4rem);
+      line-height: 1.02;
+      font-weight: 800;
+      letter-spacing: -0.05em;
+      color: var(--school-text);
+      max-width: 620px;
+    }
+
+    .ss-title span {
+      background: linear-gradient(135deg, var(--school-primary), var(--school-secondary), var(--school-accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .ss-text {
+      max-width: 610px;
+      color: var(--school-muted);
+      line-height: 1.9;
+      font-size: 1rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .ss-ribbon {
+      display: flex;
+      align-items: stretch;
+      gap: 14px;
+      margin-bottom: 1.5rem;
+      max-width: 620px;
+    }
+
+    .ss-ribbon-line {
+      width: 12px;
+      border-radius: 999px;
+      background: linear-gradient(180deg, var(--school-primary), var(--school-secondary), var(--school-accent));
+      box-shadow: 0 10px 20px rgba(18, 60, 122, 0.12);
+    }
+
+    .ss-ribbon-card {
+      flex: 1;
+      padding: 1rem 1.1rem;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.82);
+      border: 1px solid rgba(255,255,255,0.9);
+      box-shadow: var(--school-shadow-soft);
+      backdrop-filter: blur(12px);
+    }
+
+    .ss-ribbon-card strong {
+      display: block;
+      color: var(--school-text);
+      margin-bottom: 4px;
+      font-size: 1rem;
+    }
+
+    .ss-ribbon-card span {
+      color: var(--school-muted);
+      line-height: 1.7;
+      font-size: 0.93rem;
+    }
+
+    .ss-feature-grid {
+      display: grid;
+      gap: 14px;
+      max-width: 620px;
+    }
+
+    .ss-feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 1rem;
+      border-radius: 22px;
+      background: rgba(255,255,255,0.82);
+      border: 1px solid rgba(255,255,255,0.92);
+      box-shadow: var(--school-shadow-soft);
+      backdrop-filter: blur(10px);
+      transition: var(--transition-base);
+    }
+
+    .ss-feature:hover {
+      transform: translateX(8px);
+      box-shadow: 0 18px 36px rgba(10, 31, 68, 0.10);
+    }
+
+    .ss-feature-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      background: linear-gradient(135deg, var(--school-primary), var(--school-secondary));
+      color: #fff;
+      font-size: 1.08rem;
+      box-shadow: 0 12px 24px rgba(29, 101, 193, 0.18);
+    }
+
+    .ss-feature-icon.accent {
+      background: linear-gradient(135deg, var(--school-accent), #f0a81f);
+      color: var(--school-primary-dark);
+      box-shadow: 0 12px 24px rgba(244, 185, 66, 0.22);
+    }
+
+    .ss-feature h3 {
+      margin: 0 0 4px;
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--school-text);
+    }
+
+    .ss-feature p {
+      margin: 0;
+      font-size: 0.93rem;
+      line-height: 1.7;
+      color: var(--school-muted);
+    }
+
+    .ss-stage {
+      position: relative;
+      min-height: 620px;
+      padding: 18px;
+      border-radius: 34px;
+      background: rgba(255,255,255,0.7);
+      border: 1px solid rgba(255,255,255,0.9);
+      box-shadow: var(--school-shadow);
+      backdrop-filter: blur(14px);
+      overflow: hidden;
+    }
+
+    .ss-photo-main {
+      position: relative;
+      width: 82%;
+      margin-left: auto;
+      border-radius: 26px;
+      overflow: hidden;
+      box-shadow: 0 24px 50px rgba(10, 31, 68, 0.14);
+    }
+
+    .ss-photo-main::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(13,44,93,0.02), rgba(13,44,93,0.18));
+    }
+
+    .ss-photo-main img {
+      width: 100%;
+      height: 540px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.9s ease;
+    }
+
+    .ss-stage:hover .ss-photo-main img {
+      transform: scale(1.06);
+    }
+
+    .ss-floating-card {
+      position: absolute;
+      max-width: 230px;
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.9);
+      border: 1px solid rgba(255,255,255,0.92);
+      box-shadow: var(--school-shadow-soft);
+      backdrop-filter: blur(12px);
+      animation: ssCardFloat 5.5s ease-in-out infinite;
+    }
+
+    .ss-card-top {
+      top: 34px;
+      left: 18px;
+    }
+
+    .ss-card-bottom {
+      bottom: 34px;
+      left: 34px;
+      animation-delay: -1.2s;
+    }
+
+    .ss-mini-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
+      display: inline-grid;
+      place-items: center;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, var(--school-primary), var(--school-secondary));
+      color: #fff;
+      font-size: 0.95rem;
+    }
+
+    .ss-mini-icon.accent {
+      background: linear-gradient(135deg, var(--school-accent), #f0a81f);
+      color: var(--school-primary-dark);
+    }
+
+    .ss-floating-card strong {
+      display: block;
+      color: var(--school-text);
+      font-size: 0.96rem;
+      margin-bottom: 4px;
+    }
+
+    .ss-floating-card small {
+      display: block;
+      color: var(--school-muted);
+      line-height: 1.5;
+      font-size: 0.86rem;
+    }
+
+    .ss-circle-note {
+      position: absolute;
+      right: 24px;
+      bottom: 22px;
+      width: 128px;
+      height: 128px;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(135deg, rgba(18,60,122,0.96), rgba(29,101,193,0.92));
+      color: #fff;
+      box-shadow: 0 20px 40px rgba(18, 60, 122, 0.22);
+      border: 4px solid rgba(255,255,255,0.82);
+      animation: ssPulse 5s ease-in-out infinite;
+    }
+
+    .ss-circle-note span {
+      font-size: 0.78rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      opacity: 0.78;
+    }
+
+    .ss-circle-note strong {
+      font-size: 1.15rem;
+      line-height: 1.1;
+      margin: 3px 0;
+      font-weight: 800;
+    }
+
+    .ss-circle-note small {
+      font-size: 0.78rem;
+      opacity: 0.82;
+    }
+
+    .ss-reveal {
+      opacity: 0;
+      transform: translateY(34px);
+      transition: opacity 0.9s ease, transform 0.9s ease;
+    }
+
+    .ss-reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes ssFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-18px); }
+    }
+
+    @keyframes ssCardFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    @keyframes ssPulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    @media (max-width: 991.98px) {
+      .senior-secondary-spotlight {
+        padding: 82px 0;
+        text-align: center;
+      }
+
+      .ss-title,
+      .ss-text,
+      .ss-ribbon,
+      .ss-feature-grid {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .ss-feature,
+      .ss-ribbon-card {
+        text-align: left;
+      }
+
+      .ss-stage {
+        min-height: auto;
+      }
+
+      .ss-photo-main {
+        width: 100%;
+      }
+
+      .ss-photo-main img {
+        height: 420px;
+      }
+
+      .ss-floating-card,
+      .ss-circle-note {
+        position: static;
+        max-width: 100%;
+        width: 100%;
+        margin-top: 12px;
+      }
+
+      .ss-circle-note {
+        height: auto;
+        border-radius: 24px;
+        padding: 18px;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .senior-secondary-spotlight {
+        padding: 68px 0;
+      }
+
+      .ss-title {
+        font-size: clamp(1.9rem, 8vw, 3rem);
+      }
+
+      .ss-text {
+        font-size: 0.96rem;
+        line-height: 1.8;
+      }
+
+      .ss-stage {
+        padding: 12px;
+        border-radius: 24px;
+      }
+
+      .ss-photo-main {
+        border-radius: 18px;
+      }
+
+      .ss-photo-main img {
+        height: 300px;
+      }
+
+      .ss-feature {
+        padding: 0.95rem;
+      }
+
+      .ss-ribbon {
+        gap: 10px;
+      }
+
+      .ss-ribbon-line {
+        width: 8px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .ss-orb,
+      .ss-floating-card,
+      .ss-circle-note,
+      .ss-reveal,
+      .ss-photo-main img {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const section = document.getElementById("seniorSecondary");
+      if (!section) return;
+
+      const reveals = section.querySelectorAll(".ss-reveal");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+          if (entry.isIntersecting) {
+            entry.target.style.transitionDelay = `${index * 90}ms`;
+            entry.target.classList.add("is-visible");
+          }
+        });
+      }, { threshold: 0.18 });
+
+      reveals.forEach((item) => observer.observe(item));
+
+      const visual = document.getElementById("ssVisual");
+      if (visual && window.innerWidth > 991) {
+        visual.addEventListener("mousemove", (e) => {
+          const rect = visual.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+
+          const rotateY = ((x / rect.width) - 0.5) * 7;
+          const rotateX = ((y / rect.height) - 0.5) * -5;
+
+          visual.style.transform = `perspective(1200px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        });
+
+        visual.addEventListener("mouseleave", () => {
+          visual.style.transform = "";
+        });
+      }
+    });
+  </script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="cbse-neo-section" id="cbseCurriculum">
+  <div class="cbse-neo-bg-layer layer-1"></div>
+  <div class="cbse-neo-bg-layer layer-2"></div>
+  <div class="cbse-neo-mesh"></div>
+
+  <div class="container position-relative">
+    <div class="cbse-neo-shell">
+      <div class="row g-4 align-items-stretch">
+
+        <!-- Left intro rail -->
+        <div class="col-lg-4">
+          <div class="cbse-neo-intro neo-reveal">
+            <span class="cbse-neo-tag">
+              <i class="bi bi-grid-1x2-fill"></i>
+              Curriculum Framework
+            </span>
+
+            <h2 class="cbse-neo-title">
+              CBSE at <span>Bright Future Academy</span>
+            </h2>
+
+            <p class="cbse-neo-text">
+              Our curriculum is built to create strong conceptual understanding,
+              disciplined learning habits, and future-ready confidence across every stage.
+            </p>
+
+            <div class="cbse-neo-pulse-card">
+              <div class="pulse-ring"></div>
+              <strong>Balanced Academic Journey</strong>
+              <span>Knowledge, values, skills, and progression in one connected structure.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right content stage -->
+        <div class="col-lg-8">
+          <div class="cbse-neo-stage">
+
+            <div class="cbse-neo-bridge neo-reveal">
+              <div class="cbse-neo-bridge-line"></div>
+              <div class="cbse-neo-bridge-dot dot-1"></div>
+              <div class="cbse-neo-bridge-dot dot-2"></div>
+              <div class="cbse-neo-bridge-dot dot-3"></div>
+            </div>
+
+            <div class="row g-4">
+              <div class="col-md-6">
+                <article class="cbse-neo-card neo-card-a neo-reveal" tabindex="0">
+                  <div class="cbse-neo-card-no">01</div>
+                  <div class="cbse-neo-icon-wrap">
+                    <i class="bi bi-journal-richtext"></i>
+                  </div>
+                  <h3>Concept First</h3>
+                  <p>
+                    The CBSE approach at Bright Future Academy focuses on understanding,
+                    clarity, and application rather than rote memorization.
+                  </p>
+                </article>
+              </div>
+
+              <div class="col-md-6">
+                <article class="cbse-neo-card neo-card-b neo-reveal" tabindex="0">
+                  <div class="cbse-neo-card-no">02</div>
+                  <div class="cbse-neo-icon-wrap accent">
+                    <i class="bi bi-graph-up-arrow"></i>
+                  </div>
+                  <h3>Progressive Structure</h3>
+                  <p>
+                    Students move through each academic stage with a clear learning pathway,
+                    building readiness for higher classes and future goals.
+                  </p>
+                </article>
+              </div>
+
+              <div class="col-md-7">
+                <article class="cbse-neo-wide-card neo-reveal" tabindex="0">
+                  <div class="cbse-neo-wide-top">
+                    <span class="wide-badge">Academic Focus</span>
+                    <span class="wide-badge muted">CBSE Model</span>
+                  </div>
+                  <h3>Holistic learning with academic discipline</h3>
+                  <p>
+                    Along with strong subject knowledge, the curriculum supports communication,
+                    life skills, analytical thinking, creativity, and value-based education.
+                  </p>
+
+                  <div class="cbse-neo-chip-row">
+                    <span>Critical Thinking</span>
+                    <span>Skill Development</span>
+                    <span>Value Education</span>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-md-5">
+                <div class="cbse-neo-stat-stack">
+                  <div class="cbse-neo-stat neo-reveal">
+                    <strong>100%</strong>
+                    <span>Conceptual focus</span>
+                  </div>
+                  <div class="cbse-neo-stat neo-reveal">
+                    <strong>360°</strong>
+                    <span>Student development</span>
+                  </div>
+                  <div class="cbse-neo-stat neo-reveal">
+                    <strong>CBSE</strong>
+                    <span>National framework</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <style>
+    :root {
+      --school-primary: #123c7a;
+      --school-primary-dark: #0d2c5d;
+      --school-secondary: #1d65c1;
+      --school-accent: #f4b942;
+      --school-bg: #f4f8fc;
+      --school-surface: #ffffff;
+      --school-border: #dbe5f0;
+      --school-text: #1b2b45;
+      --school-muted: #6b7a90;
+      --school-shadow: 0 16px 50px rgba(10, 31, 68, 0.12);
+      --school-shadow-soft: 0 10px 30px rgba(18, 60, 122, 0.08);
+      --school-radius: 18px;
+      --transition-base: all 0.3s ease;
+    }
+
+    .cbse-neo-section {
+      position: relative;
+      overflow: hidden;
+      padding: 100px 0;
+      background:
+        linear-gradient(135deg, #f8fbff 0%, #edf4fc 55%, #f7fbff 100%);
+      isolation: isolate;
+    }
+
+    .cbse-neo-bg-layer {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(16px);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .cbse-neo-bg-layer.layer-1 {
+      width: 340px;
+      height: 340px;
+      left: -120px;
+      top: 40px;
+      background: radial-gradient(circle, rgba(29, 101, 193, 0.14), transparent 70%);
+      animation: neoFloat 10s ease-in-out infinite;
+    }
+
+    .cbse-neo-bg-layer.layer-2 {
+      width: 300px;
+      height: 300px;
+      right: -100px;
+      bottom: 20px;
+      background: radial-gradient(circle, rgba(244, 185, 66, 0.16), transparent 70%);
+      animation: neoFloat 12s ease-in-out infinite reverse;
+    }
+
+    .cbse-neo-mesh {
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(rgba(18, 60, 122, 0.06) 1px, transparent 1px);
+      background-size: 20px 20px;
+      opacity: 0.45;
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,0.18), transparent 85%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .cbse-neo-shell {
+      position: relative;
+      z-index: 2;
+      padding: 28px;
+      border-radius: 34px;
+      background: rgba(255,255,255,0.68);
+      border: 1px solid rgba(255,255,255,0.88);
+      backdrop-filter: blur(16px);
+      box-shadow: var(--school-shadow);
+    }
+
+    .cbse-neo-intro {
+      height: 100%;
+      padding: 18px 10px 18px 6px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .cbse-neo-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      width: fit-content;
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: rgba(18, 60, 122, 0.07);
+      color: var(--school-primary);
+      border: 1px solid rgba(18, 60, 122, 0.08);
+      font-weight: 700;
+      font-size: 0.88rem;
+      margin-bottom: 16px;
+      box-shadow: var(--school-shadow-soft);
+    }
+
+    .cbse-neo-title {
+      margin: 0 0 14px;
+      font-size: clamp(2rem, 4.2vw, 3.9rem);
+      line-height: 1.02;
+      letter-spacing: -0.05em;
+      font-weight: 800;
+      color: var(--school-text);
+    }
+
+    .cbse-neo-title span {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--school-primary), var(--school-secondary), var(--school-accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .cbse-neo-text {
+      margin: 0 0 22px;
+      color: var(--school-muted);
+      line-height: 1.9;
+      max-width: 430px;
+      font-size: 0.98rem;
+    }
+
+    .cbse-neo-pulse-card {
+      position: relative;
+      padding: 18px 18px 18px 20px;
+      border-radius: 24px;
+      background: linear-gradient(135deg, rgba(18,60,122,0.96), rgba(29,101,193,0.92));
+      color: #fff;
+      overflow: hidden;
+      box-shadow: 0 18px 34px rgba(18, 60, 122, 0.18);
+      max-width: 420px;
+    }
+
+    .cbse-neo-pulse-card strong {
+      display: block;
+      font-size: 1.02rem;
+      margin-bottom: 6px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .cbse-neo-pulse-card span {
+      display: block;
+      color: rgba(255,255,255,0.86);
+      line-height: 1.7;
+      font-size: 0.9rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .pulse-ring {
+      position: absolute;
+      width: 160px;
+      height: 160px;
+      right: -50px;
+      top: -40px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.18);
+      box-shadow:
+        0 0 0 18px rgba(255,255,255,0.05),
+        0 0 0 36px rgba(255,255,255,0.03);
+      animation: neoPulse 4s ease-in-out infinite;
+    }
+
+    .cbse-neo-stage {
+      position: relative;
+      min-height: 100%;
+      padding: 8px 0 0;
+    }
+
+    .cbse-neo-bridge {
+      position: relative;
+      height: 56px;
+      margin-bottom: 10px;
+    }
+
+    .cbse-neo-bridge-line {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 28px;
+      height: 2px;
+      border-radius: 999px;
+      background: linear-gradient(90deg,
+        rgba(18,60,122,0.10),
+        rgba(29,101,193,0.45),
+        rgba(244,185,66,0.45),
+        rgba(18,60,122,0.10));
+      overflow: hidden;
+    }
+
+    .cbse-neo-bridge-line::after {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: -120px;
+      width: 120px;
+      height: 6px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.9), transparent);
+      animation: neoTravel 4.5s linear infinite;
+    }
+
+    .cbse-neo-bridge-dot {
+      position: absolute;
+      top: 20px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #fff;
+      border: 3px solid var(--school-secondary);
+      box-shadow: 0 8px 18px rgba(29, 101, 193, 0.18);
+    }
+
+    .cbse-neo-bridge-dot.dot-1 { left: 8%; }
+    .cbse-neo-bridge-dot.dot-2 { left: 46%; border-color: var(--school-accent); }
+    .cbse-neo-bridge-dot.dot-3 { right: 10%; }
+
+    .cbse-neo-card,
+    .cbse-neo-wide-card,
+    .cbse-neo-stat {
+      position: relative;
+      background: rgba(255,255,255,0.82);
+      border: 1px solid rgba(255,255,255,0.92);
+      box-shadow: var(--school-shadow-soft);
+      backdrop-filter: blur(12px);
+      transition: var(--transition-base);
+    }
+
+    .cbse-neo-card,
+    .cbse-neo-wide-card {
+      height: 100%;
+      border-radius: 28px;
+      padding: 24px;
+      overflow: hidden;
+    }
+
+    .cbse-neo-card::before,
+    .cbse-neo-wide-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,0.24), transparent 36%, transparent 70%, rgba(255,255,255,0.1));
+      pointer-events: none;
+    }
+
+    .cbse-neo-card:hover,
+    .cbse-neo-wide-card:hover,
+    .cbse-neo-stat:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 22px 44px rgba(10, 31, 68, 0.12);
+    }
+
+    .cbse-neo-card-no {
+      position: absolute;
+      top: 18px;
+      right: 20px;
+      font-size: 0.88rem;
+      letter-spacing: 0.16em;
+      color: rgba(27,43,69,0.22);
+      font-weight: 800;
+    }
+
+    .cbse-neo-icon-wrap {
+      width: 58px;
+      height: 58px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--school-primary), var(--school-secondary));
+      color: #fff;
+      font-size: 1.2rem;
+      box-shadow: 0 12px 24px rgba(29, 101, 193, 0.16);
+      margin-bottom: 18px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .cbse-neo-icon-wrap.accent {
+      background: linear-gradient(135deg, var(--school-accent), #f0a81f);
+      color: var(--school-primary-dark);
+      box-shadow: 0 12px 24px rgba(244, 185, 66, 0.22);
+    }
+
+    .cbse-neo-card h3,
+    .cbse-neo-wide-card h3 {
+      margin: 0 0 10px;
+      font-size: 1.28rem;
+      line-height: 1.1;
+      font-weight: 800;
+      color: var(--school-text);
+      position: relative;
+      z-index: 1;
+    }
+
+    .cbse-neo-card p,
+    .cbse-neo-wide-card p {
+      margin: 0;
+      color: var(--school-muted);
+      font-size: 0.95rem;
+      line-height: 1.8;
+      position: relative;
+      z-index: 1;
+    }
+
+    .cbse-neo-wide-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .wide-badge {
+      padding: 8px 13px;
+      border-radius: 999px;
+      background: rgba(29,101,193,0.08);
+      border: 1px solid rgba(29,101,193,0.10);
+      color: var(--school-primary);
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    .wide-badge.muted {
+      background: rgba(244,185,66,0.12);
+      border-color: rgba(244,185,66,0.18);
+      color: #a87514;
+    }
+
+    .cbse-neo-chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .cbse-neo-chip-row span {
+      padding: 9px 13px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.86);
+      border: 1px solid rgba(255,255,255,0.98);
+      color: var(--school-text);
+      font-size: 0.82rem;
+      font-weight: 600;
+      box-shadow: 0 8px 20px rgba(18, 60, 122, 0.05);
+    }
+
+    .cbse-neo-stat-stack {
+      display: grid;
+      gap: 14px;
+      height: 100%;
+    }
+
+    .cbse-neo-stat {
+      border-radius: 22px;
+      padding: 20px 18px;
+      text-align: center;
+    }
+
+    .cbse-neo-stat strong {
+      display: block;
+      font-size: 1.6rem;
+      line-height: 1;
+      margin-bottom: 5px;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--school-primary), var(--school-accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .cbse-neo-stat span {
+      color: var(--school-muted);
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .neo-reveal {
+      opacity: 0;
+      transform: translateY(34px);
+      transition: opacity 0.9s ease, transform 0.9s ease;
+    }
+
+    .neo-reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes neoFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-18px); }
+    }
+
+    @keyframes neoPulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.05); opacity: 0.9; }
+    }
+
+    @keyframes neoTravel {
+      0% { left: -120px; }
+      100% { left: calc(100% + 40px); }
+    }
+
+    @media (max-width: 991.98px) {
+      .cbse-neo-section {
+        padding: 82px 0;
+        text-align: center;
+      }
+
+      .cbse-neo-shell {
+        padding: 18px;
+        border-radius: 26px;
+      }
+
+      .cbse-neo-intro {
+        padding: 10px 0;
+      }
+
+      .cbse-neo-text,
+      .cbse-neo-pulse-card {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .cbse-neo-stage {
+        padding-top: 0;
+      }
+
+      .cbse-neo-bridge {
+        margin-bottom: 16px;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .cbse-neo-section {
+        padding: 68px 0;
+      }
+
+      .cbse-neo-title {
+        font-size: clamp(1.9rem, 8vw, 3rem);
+      }
+
+      .cbse-neo-text {
+        font-size: 0.96rem;
+        line-height: 1.8;
+      }
+
+      .cbse-neo-card,
+      .cbse-neo-wide-card {
+        padding: 20px 18px;
+        border-radius: 22px;
+      }
+
+      .cbse-neo-pulse-card {
+        padding: 16px;
+        border-radius: 20px;
+      }
+
+      .cbse-neo-shell {
+        padding: 12px;
+      }
+
+      .cbse-neo-bridge {
+        height: 44px;
+      }
+
+      .cbse-neo-bridge-line {
+        top: 22px;
+      }
+
+      .cbse-neo-bridge-dot {
+        top: 14px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .cbse-neo-bg-layer,
+      .pulse-ring,
+      .cbse-neo-bridge-line::after,
+      .neo-reveal {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const section = document.getElementById("cbseCurriculum");
+      if (!section) return;
+
+      const reveals = section.querySelectorAll(".neo-reveal");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+          if (entry.isIntersecting) {
+            entry.target.style.transitionDelay = `${index * 90}ms`;
+            entry.target.classList.add("is-visible");
+          }
+        });
+      }, { threshold: 0.18 });
+
+      reveals.forEach((item) => observer.observe(item));
+
+      const hoverCards = section.querySelectorAll(".cbse-neo-card, .cbse-neo-wide-card, .cbse-neo-stat");
+      hoverCards.forEach((card) => {
+        card.addEventListener("mousemove", (e) => {
+          if (window.innerWidth < 992) return;
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          const rotateY = ((x / rect.width) - 0.5) * 8;
+          const rotateX = ((y / rect.height) - 0.5) * -5;
+          card.style.transform = `translateY(-8px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        });
+
+        card.addEventListener("mouseleave", () => {
+          card.style.transform = "";
+        });
+      });
+    });
+  </script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="digital-learning-section" id="digitalLearning">
+  <div class="dl-bg-shape shape-1"></div>
+  <div class="dl-bg-shape shape-2"></div>
+  <div class="dl-grid"></div>
+
+  <div class="container position-relative">
+    <div class="dl-shell">
+      <div class="row align-items-center g-4 g-lg-5">
+
+        <!-- Left Content -->
+        <div class="col-lg-5">
+          <div class="dl-content">
+            <span class="dl-kicker dl-reveal">
+              <i class="bi bi-laptop-fill"></i>
+              Digital Learning
+            </span>
+
+            <h2 class="dl-title dl-reveal">
+              Smart classes with <span>e-learning support</span>
+            </h2>
+
+            <p class="dl-text dl-reveal">
+              At Bright Future Academy, digital learning makes classroom experiences more engaging,
+              interactive, and future-ready. Our smart class environment helps students understand
+              concepts with clarity through visual teaching and technology-enabled support.
+            </p>
+
+            <div class="dl-note dl-reveal">
+              <strong>Learning enhanced by technology</strong>
+              <span>Interactive lessons, multimedia teaching, and better classroom engagement.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Visual / Cards -->
+        <div class="col-lg-7">
+          <div class="dl-stage">
+            <div class="row g-4">
+              <div class="col-md-6">
+                <article class="dl-card dl-card-main dl-reveal" tabindex="0">
+                  <div class="dl-card-icon">
+                    <i class="bi bi-display-fill"></i>
+                  </div>
+                  <h3>Smart Classrooms</h3>
+                  <p>
+                    Technology-enabled classrooms that make lessons more visual,
+                    interactive, and easy to understand.
+                  </p>
+                </article>
+              </div>
+
+              <div class="col-md-6">
+                <article class="dl-card dl-card-accent dl-reveal" tabindex="0">
+                  <div class="dl-card-icon accent">
+                    <i class="bi bi-play-circle-fill"></i>
+                  </div>
+                  <h3>E-Learning Support</h3>
+                  <p>
+                    Digital resources and learning tools that help students revise,
+                    explore, and strengthen concepts beyond textbooks.
+                  </p>
+                </article>
+              </div>
+
+              <div class="col-12">
+                <div class="dl-bottom-panel dl-reveal">
+                  <div class="dl-panel-line"></div>
+                  <div class="dl-panel-content">
+                    <span class="dl-panel-badge">Bright Future Academy</span>
+                    <h4>Modern learning for modern students</h4>
+                    <p>
+                      Our digital learning approach supports better understanding, stronger engagement,
+                      and a more connected classroom experience for every learner.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dl-floating-chip chip-1">
+              <i class="bi bi-wifi"></i>
+              <span>Connected Learning</span>
+            </div>
+
+            <div class="dl-floating-chip chip-2">
+              <i class="bi bi-easel-fill"></i>
+              <span>Interactive Teaching</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <style>
+    :root {
+      --school-primary: #123c7a;
+      --school-primary-dark: #0d2c5d;
+      --school-secondary: #1d65c1;
+      --school-accent: #f4b942;
+      --school-bg: #f4f8fc;
+      --school-surface: #ffffff;
+      --school-border: #dbe5f0;
+      --school-text: #1b2b45;
+      --school-muted: #6b7a90;
+      --school-shadow: 0 16px 50px rgba(10, 31, 68, 0.12);
+      --school-shadow-soft: 0 10px 30px rgba(18, 60, 122, 0.08);
+      --school-radius: 18px;
+      --transition-base: all 0.3s ease;
+    }
+
+    .digital-learning-section {
+      position: relative;
+      overflow: hidden;
+      padding: 95px 0;
+      background:
+        radial-gradient(circle at top left, rgba(29, 101, 193, 0.08), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(244, 185, 66, 0.12), transparent 30%),
+        linear-gradient(180deg, #ffffff 0%, var(--school-bg) 100%);
+      isolation: isolate;
+    }
+
+    .dl-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(18, 60, 122, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(18, 60, 122, 0.035) 1px, transparent 1px);
+      background-size: 42px 42px;
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,0.2), transparent 88%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .dl-bg-shape {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(12px);
+      pointer-events: none;
+      z-index: 0;
+      animation: dlFloat 10s ease-in-out infinite;
+    }
+
+    .dl-bg-shape.shape-1 {
+      width: 280px;
+      height: 280px;
+      top: -90px;
+      left: -80px;
+      background: radial-gradient(circle, rgba(29,101,193,0.16), transparent 70%);
+    }
+
+    .dl-bg-shape.shape-2 {
+      width: 320px;
+      height: 320px;
+      right: -110px;
+      bottom: -70px;
+      background: radial-gradient(circle, rgba(244,185,66,0.18), transparent 72%);
+      animation-delay: -3s;
+    }
+
+    .dl-shell {
+      position: relative;
+      z-index: 2;
+      padding: 24px;
+      border-radius: 32px;
+      background: rgba(255,255,255,0.68);
+      border: 1px solid rgba(255,255,255,0.9);
+      backdrop-filter: blur(14px);
+      box-shadow: var(--school-shadow);
+    }
+
+    .dl-content,
+    .dl-stage {
+      position: relative;
+    }
+
+    .dl-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: rgba(244, 185, 66, 0.12);
+      color: #a87514;
+      border: 1px solid rgba(244, 185, 66, 0.22);
+      font-weight: 700;
+      font-size: 0.92rem;
+      margin-bottom: 1rem;
+      box-shadow: var(--school-shadow-soft);
+    }
+
+    .dl-title {
+      margin: 0 0 16px;
+      font-size: clamp(2rem, 4.4vw, 3.8rem);
+      line-height: 1.03;
+      letter-spacing: -0.05em;
+      font-weight: 800;
+      color: var(--school-text);
+      max-width: 580px;
+    }
+
+    .dl-title span {
+      background: linear-gradient(135deg, var(--school-primary), var(--school-secondary), var(--school-accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .dl-text {
+      margin: 0 0 18px;
+      color: var(--school-muted);
+      line-height: 1.9;
+      font-size: 1rem;
+      max-width: 540px;
+    }
+
+    .dl-note {
+      max-width: 520px;
+      padding: 18px 18px 18px 20px;
+      border-radius: 22px;
+      background: linear-gradient(135deg, rgba(18,60,122,0.96), rgba(29,101,193,0.92));
+      color: #fff;
+      box-shadow: 0 18px 34px rgba(18, 60, 122, 0.18);
+    }
+
+    .dl-note strong {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 5px;
+    }
+
+    .dl-note span {
+      display: block;
+      color: rgba(255,255,255,0.86);
+      line-height: 1.7;
+      font-size: 0.92rem;
+    }
+
+    .dl-card,
+    .dl-bottom-panel {
+      position: relative;
+      background: rgba(255,255,255,0.84);
+      border: 1px solid rgba(255,255,255,0.92);
+      box-shadow: var(--school-shadow-soft);
+      backdrop-filter: blur(12px);
+      transition: var(--transition-base);
+      overflow: hidden;
+    }
+
+    .dl-card {
+      height: 100%;
+      padding: 24px;
+      border-radius: 26px;
+    }
+
+    .dl-card:hover,
+    .dl-bottom-panel:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 22px 44px rgba(10, 31, 68, 0.12);
+    }
+
+    .dl-card::after {
+      content: "";
+      position: absolute;
+      left: 18px;
+      right: 18px;
+      bottom: 0;
+      height: 4px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--school-primary), var(--school-secondary), var(--school-accent));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.35s ease;
+    }
+
+    .dl-card:hover::after {
+      transform: scaleX(1);
+    }
+
+    .dl-card-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--school-primary), var(--school-secondary));
+      color: #fff;
+      font-size: 1.25rem;
+      box-shadow: 0 12px 24px rgba(29, 101, 193, 0.16);
+      margin-bottom: 16px;
+    }
+
+    .dl-card-icon.accent {
+      background: linear-gradient(135deg, var(--school-accent), #f0a81f);
+      color: var(--school-primary-dark);
+      box-shadow: 0 12px 24px rgba(244, 185, 66, 0.22);
+    }
+
+    .dl-card h3 {
+      margin: 0 0 10px;
+      font-size: 1.26rem;
+      line-height: 1.1;
+      font-weight: 800;
+      color: var(--school-text);
+    }
+
+    .dl-card p {
+      margin: 0;
+      color: var(--school-muted);
+      font-size: 0.95rem;
+      line-height: 1.8;
+    }
+
+    .dl-card-main {
+      background: linear-gradient(180deg, rgba(255,255,255,0.88), rgba(245,249,255,0.92));
+    }
+
+    .dl-card-accent {
+      background: linear-gradient(180deg, rgba(255,251,243,0.92), rgba(255,255,255,0.88));
+    }
+
+    .dl-bottom-panel {
+      display: flex;
+      align-items: stretch;
+      gap: 16px;
+      padding: 0;
+      border-radius: 28px;
+    }
+
+    .dl-panel-line {
+      width: 12px;
+      min-height: 100%;
+      background: linear-gradient(180deg, var(--school-primary), var(--school-secondary), var(--school-accent));
+    }
+
+    .dl-panel-content {
+      padding: 22px 20px;
+      flex: 1;
+    }
+
+    .dl-panel-badge {
+      display: inline-flex;
+      padding: 8px 13px;
+      border-radius: 999px;
+      background: rgba(29,101,193,0.08);
+      border: 1px solid rgba(29,101,193,0.10);
+      color: var(--school-primary);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .dl-panel-content h4 {
+      margin: 0 0 8px;
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--school-text);
+    }
+
+    .dl-panel-content p {
+      margin: 0;
+      color: var(--school-muted);
+      line-height: 1.8;
+      font-size: 0.95rem;
+      max-width: 650px;
+    }
+
+    .dl-floating-chip {
+      position: absolute;
+      z-index: 2;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 16px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.9);
+      border: 1px solid rgba(255,255,255,0.92);
+      box-shadow: var(--school-shadow-soft);
+      backdrop-filter: blur(12px);
+      color: var(--school-text);
+      font-size: 0.88rem;
+      font-weight: 700;
+      animation: dlChipFloat 5.5s ease-in-out infinite;
+    }
+
+    .dl-floating-chip i {
+      color: var(--school-primary);
+      font-size: 1rem;
+    }
+
+    .chip-1 {
+      top: -16px;
+      right: 28px;
+    }
+
+    .chip-2 {
+      bottom: -12px;
+      right: 90px;
+      animation-delay: -1.2s;
+    }
+
+    .dl-reveal {
+      opacity: 0;
+      transform: translateY(34px);
+      transition: opacity 0.9s ease, transform 0.9s ease;
+    }
+
+    .dl-reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes dlFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-18px); }
+    }
+
+    @keyframes dlChipFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    @media (max-width: 991.98px) {
+      .digital-learning-section {
+        padding: 82px 0;
+        text-align: center;
+      }
+
+      .dl-shell {
+        padding: 18px;
+        border-radius: 26px;
+      }
+
+      .dl-text,
+      .dl-note {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .dl-floating-chip {
+        position: static;
+        width: fit-content;
+        margin: 12px auto 0;
+      }
+
+      .dl-bottom-panel {
+        text-align: left;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .digital-learning-section {
+        padding: 68px 0;
+      }
+
+      .dl-title {
+        font-size: clamp(1.9rem, 8vw, 3rem);
+      }
+
+      .dl-text {
+        font-size: 0.96rem;
+        line-height: 1.8;
+      }
+
+      .dl-shell {
+        padding: 12px;
+      }
+
+      .dl-card {
+        padding: 20px 18px;
+        border-radius: 22px;
+      }
+
+      .dl-bottom-panel {
+        border-radius: 22px;
+      }
+
+      .dl-panel-line {
+        width: 8px;
+      }
+
+      .dl-panel-content {
+        padding: 18px 16px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .dl-bg-shape,
+      .dl-floating-chip,
+      .dl-reveal {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const section = document.getElementById("digitalLearning");
+      if (!section) return;
+
+      const reveals = section.querySelectorAll(".dl-reveal");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+          if (entry.isIntersecting) {
+            entry.target.style.transitionDelay = `${index * 90}ms`;
+            entry.target.classList.add("is-visible");
+          }
+        });
+      }, { threshold: 0.18 });
+
+      reveals.forEach((item) => observer.observe(item));
+
+      const hoverItems = section.querySelectorAll(".dl-card, .dl-bottom-panel");
+      hoverItems.forEach((item) => {
+        item.addEventListener("mousemove", (e) => {
+          if (window.innerWidth < 992) return;
+          const rect = item.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          const rotateY = ((x / rect.width) - 0.5) * 8;
+          const rotateX = ((y / rect.height) - 0.5) * -5;
+          item.style.transform = `translateY(-8px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        });
+
+        item.addEventListener("mouseleave", () => {
+          item.style.transform = "";
+        });
+      });
+    });
+  </script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="edu-assessment-arc" id="assessmentSystem">
+  <div class="ea-glow ea-glow-1"></div>
+  <div class="ea-glow ea-glow-2"></div>
+  <div class="ea-pattern"></div>
+
+  <div class="container position-relative">
+    <div class="ea-wrap">
+      <div class="row align-items-center g-5">
+
+        <!-- Left Side -->
+        <div class="col-lg-5">
+          <div class="ea-intro ea-reveal">
+            <span class="ea-badge">
+              <i class="bi bi-clipboard2-check-fill"></i>
+              Assessment System
+            </span>
+
+            <h2 class="ea-title">
+              Transparent and <span>continuous</span> evaluation
+            </h2>
+
+            <p class="ea-text">
+              At Bright Future Academy, assessment is designed as a clear and continuous
+              process that helps students grow with confidence while keeping parents informed
+              at every stage.
+            </p>
+
+            <div class="ea-side-note">
+              <strong>Growth over pressure</strong>
+              <span>Every evaluation is meant to guide learning, improvement, and progress.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side -->
+        <div class="col-lg-7">
+          <div class="ea-flow-box ea-reveal" id="eaFlowBox">
+
+            <div class="ea-flow-line" aria-hidden="true">
+              <span class="ea-line-track"></span>
+              <span class="ea-line-dot dot-1"></span>
+              <span class="ea-line-dot dot-2"></span>
+              <span class="ea-line-dot dot-3"></span>
+            </div>
+
+            <div class="ea-step ea-step-1 ea-reveal">
+              <div class="ea-step-marker">
+                <i class="bi bi-eye-fill"></i>
+              </div>
+              <div class="ea-step-content">
+                <small>Step 01</small>
+                <h3>Observe</h3>
+                <p>Teachers regularly observe classwork, participation, and day-to-day learning progress.</p>
+              </div>
+            </div>
+
+            <div class="ea-step ea-step-2 ea-reveal">
+              <div class="ea-step-marker accent">
+                <i class="bi bi-bar-chart-line-fill"></i>
+              </div>
+              <div class="ea-step-content">
+                <small>Step 02</small>
+                <h3>Evaluate</h3>
+                <p>Performance is reviewed through assignments, tests, projects, and classroom activities.</p>
+              </div>
+            </div>
+
+            <div class="ea-step ea-step-3 ea-reveal">
+              <div class="ea-step-marker">
+                <i class="bi bi-arrow-repeat"></i>
+              </div>
+              <div class="ea-step-content">
+                <small>Step 03</small>
+                <h3>Improve</h3>
+                <p>Constructive feedback helps students understand strengths, correct gaps, and move forward.</p>
+              </div>
+            </div>
+
+            <div class="ea-bottom-strip ea-reveal">
+              <div class="ea-mini-stat">
+                <strong>360°</strong>
+                <span>student review</span>
+              </div>
+              <div class="ea-mini-stat">
+                <strong>100%</strong>
+                <span>clear feedback</span>
+              </div>
+              <div class="ea-mini-stat">
+                <strong>ABC</strong>
+                <span>progress focused</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <style>
+    :root {
+      --school-primary: #123c7a;
+      --school-primary-dark: #0d2c5d;
+      --school-secondary: #1d65c1;
+      --school-accent: #f4b942;
+      --school-bg: #f4f8fc;
+      --school-surface: #ffffff;
+      --school-border: #dbe5f0;
+      --school-text: #1b2b45;
+      --school-muted: #6b7a90;
+      --school-shadow: 0 16px 50px rgba(10, 31, 68, 0.12);
+      --school-shadow-soft: 0 10px 30px rgba(18, 60, 122, 0.08);
+      --school-radius: 18px;
+      --transition-base: all 0.3s ease;
+    }
+
+    .edu-assessment-arc {
+      position: relative;
+      overflow: hidden;
+      padding: 100px 0;
+      background:
+        linear-gradient(180deg, #ffffff 0%, var(--school-bg) 100%);
+      isolation: isolate;
+    }
+
+    .ea-glow {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(18px);
+      pointer-events: none;
+      z-index: 0;
+      animation: eaFloat 10s ease-in-out infinite;
+    }
+
+    .ea-glow-1 {
+      width: 300px;
+      height: 300px;
+      top: -80px;
+      left: -90px;
+      background: radial-gradient(circle, rgba(29, 101, 193, 0.16), transparent 72%);
+    }
+
+    .ea-glow-2 {
+      width: 280px;
+      height: 280px;
+      right: -80px;
+      bottom: 10px;
+      background: radial-gradient(circle, rgba(244, 185, 66, 0.18), transparent 72%);
+      animation-delay: -3s;
+    }
+
+    .ea-pattern {
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(rgba(18, 60, 122, 0.06) 1px, transparent 1px);
+      background-size: 18px 18px;
+      opacity: 0.45;
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,0.16), transparent 85%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .ea-wrap {
+      position: relative;
+      z-index: 2;
+      padding: 26px;
+      border-radius: 34px;
+      background: rgba(255,255,255,0.72);
+      border: 1px solid rgba(255,255,255,0.92);
+      backdrop-filter: blur(16px);
+      box-shadow: var(--school-shadow);
+    }
+
+    .ea-intro,
+    .ea-flow-box {
+      position: relative;
+    }
+
+    .ea-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: rgba(244, 185, 66, 0.12);
+      color: #a87514;
+      border: 1px solid rgba(244, 185, 66, 0.22);
+      font-weight: 700;
+      font-size: 0.92rem;
+      margin-bottom: 1rem;
+      box-shadow: var(--school-shadow-soft);
+    }
+
+    .ea-title {
+      margin: 0 0 16px;
+      font-size: clamp(2rem, 4.5vw, 3.9rem);
+      line-height: 1.02;
+      letter-spacing: -0.05em;
+      font-weight: 800;
+      color: var(--school-text);
+      max-width: 560px;
+    }
+
+    .ea-title span {
+      background: linear-gradient(135deg, var(--school-primary), var(--school-secondary), var(--school-accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .ea-text {
+      margin: 0 0 20px;
+      color: var(--school-muted);
+      line-height: 1.9;
+      font-size: 1rem;
+      max-width: 500px;
+    }
+
+    .ea-side-note {
+      max-width: 450px;
+      padding: 18px 18px 18px 20px;
+      border-radius: 22px;
+      background: rgba(255,255,255,0.9);
+      border: 1px solid rgba(255,255,255,0.96);
+      box-shadow: var(--school-shadow-soft);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ea-side-note::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 16px;
+      bottom: 16px;
+      width: 5px;
+      border-radius: 999px;
+      background: linear-gradient(180deg, var(--school-primary), var(--school-secondary), var(--school-accent));
+    }
+
+    .ea-side-note strong,
+    .ea-side-note span {
+      display: block;
+      padding-left: 12px;
+    }
+
+    .ea-side-note strong {
+      color: var(--school-text);
+      font-size: 1rem;
+      margin-bottom: 5px;
+    }
+
+    .ea-side-note span {
+      color: var(--school-muted);
+      line-height: 1.7;
+      font-size: 0.92rem;
+    }
+
+    .ea-flow-box {
+      min-height: 100%;
+      padding: 24px 24px 20px;
+      border-radius: 30px;
+      background:
+        linear-gradient(135deg, rgba(18,60,122,0.96), rgba(29,101,193,0.92));
+      box-shadow: 0 24px 54px rgba(18, 60, 122, 0.18);
+      overflow: hidden;
+      color: #fff;
+    }
+
+    .ea-flow-box::before {
+      content: "";
+      position: absolute;
+      top: -120px;
+      right: -120px;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(244,185,66,0.20), transparent 72%);
+      filter: blur(10px);
+      pointer-events: none;
+    }
+
+    .ea-flow-line {
+      position: absolute;
+      left: 56px;
+      top: 54px;
+      bottom: 76px;
+      width: 22px;
+      z-index: 1;
+    }
+
+    .ea-line-track {
+      position: absolute;
+      left: 9px;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      border-radius: 999px;
+      background: linear-gradient(180deg,
+        rgba(255,255,255,0.12),
+        rgba(255,255,255,0.65),
+        rgba(244,185,66,0.65),
+        rgba(255,255,255,0.12));
+      overflow: hidden;
+    }
+
+    .ea-line-track::after {
+      content: "";
+      position: absolute;
+      left: -2px;
+      top: -80px;
+      width: 8px;
+      height: 80px;
+      border-radius: 999px;
+      background: linear-gradient(180deg, transparent, rgba(255,255,255,0.95), transparent);
+      animation: eaTravel 3.8s linear infinite;
+    }
+
+    .ea-line-dot {
+      position: absolute;
+      left: 0;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #fff;
+      border: 5px solid rgba(255,255,255,0.28);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+    }
+
+    .ea-line-dot.dot-1 { top: 20px; }
+    .ea-line-dot.dot-2 { top: 50%; transform: translateY(-50%); border-color: rgba(244,185,66,0.45); }
+    .ea-line-dot.dot-3 { bottom: 22px; }
+
+    .ea-step {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 84px 1fr;
+      gap: 18px;
+      align-items: center;
+      padding: 14px 0;
+    }
+
+    .ea-step + .ea-step {
+      margin-top: 8px;
+    }
+
+    .ea-step-marker {
+      width: 58px;
+      height: 58px;
+      margin-left: auto;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.14);
+      color: #fff;
+      font-size: 1.15rem;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+    }
+
+    .ea-step-marker.accent {
+      background: rgba(244,185,66,0.14);
+      color: #ffe4a3;
+      border-color: rgba(244,185,66,0.24);
+    }
+
+    .ea-step-content {
+      padding: 18px 18px 16px;
+      border-radius: 22px;
+      background: rgba(255,255,255,0.10);
+      border: 1px solid rgba(255,255,255,0.12);
+      backdrop-filter: blur(10px);
+      transition: var(--transition-base);
+    }
+
+    .ea-step-content:hover {
+      transform: translateX(6px);
+      background: rgba(255,255,255,0.13);
+    }
+
+    .ea-step-content small {
+      display: block;
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.68);
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+
+    .ea-step-content h3 {
+      margin: 0 0 6px;
+      font-size: 1.16rem;
+      line-height: 1.1;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .ea-step-content p {
+      margin: 0;
+      color: rgba(255,255,255,0.82);
+      line-height: 1.75;
+      font-size: 0.94rem;
+    }
+
+    .ea-bottom-strip {
+      position: relative;
+      z-index: 2;
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .ea-mini-stat {
+      padding: 16px 14px;
+      border-radius: 18px;
+      text-align: center;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.14);
+      backdrop-filter: blur(10px);
+    }
+
+    .ea-mini-stat strong {
+      display: block;
+      font-size: 1.35rem;
+      line-height: 1;
+      margin-bottom: 5px;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .ea-mini-stat span {
+      display: block;
+      font-size: 0.84rem;
+      color: rgba(255,255,255,0.78);
+      font-weight: 600;
+    }
+
+    .ea-reveal {
+      opacity: 0;
+      transform: translateY(34px);
+      transition: opacity 0.9s ease, transform 0.9s ease;
+    }
+
+    .ea-reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes eaFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-18px); }
+    }
+
+    @keyframes eaTravel {
+      0% { top: -80px; }
+      100% { top: calc(100% + 20px); }
+    }
+
+    @media (max-width: 991.98px) {
+      .edu-assessment-arc {
+        padding: 82px 0;
+        text-align: center;
+      }
+
+      .ea-wrap {
+        padding: 18px;
+        border-radius: 26px;
+      }
+
+      .ea-text,
+      .ea-side-note {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .ea-flow-line {
+        left: 24px;
+      }
+
+      .ea-step {
+        grid-template-columns: 70px 1fr;
+        text-align: left;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .edu-assessment-arc {
+        padding: 68px 0;
+      }
+
+      .ea-title {
+        font-size: clamp(1.9rem, 8vw, 3rem);
+      }
+
+      .ea-text {
+        font-size: 0.96rem;
+        line-height: 1.8;
+      }
+
+      .ea-wrap {
+        padding: 12px;
+      }
+
+      .ea-flow-box {
+        padding: 18px 14px 16px;
+        border-radius: 24px;
+      }
+
+      .ea-flow-line {
+        left: 12px;
+        top: 42px;
+        bottom: 94px;
+      }
+
+      .ea-step {
+        grid-template-columns: 54px 1fr;
+        gap: 12px;
+      }
+
+      .ea-step-marker {
+        width: 44px;
+        height: 44px;
+        border-radius: 14px;
+        font-size: 1rem;
+      }
+
+      .ea-step-content {
+        padding: 14px 14px 13px;
+        border-radius: 18px;
+      }
+
+      .ea-bottom-strip {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .as-bg,
+      .ea-line-track::after,
+      .ea-reveal {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const section = document.getElementById("assessmentSystem");
+      if (!section) return;
+
+      const reveals = section.querySelectorAll(".ea-reveal");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+          if (entry.isIntersecting) {
+            entry.target.style.transitionDelay = `${index * 100}ms`;
+            entry.target.classList.add("is-visible");
+          }
+        });
+      }, { threshold: 0.18 });
+
+      reveals.forEach((item) => observer.observe(item));
+
+      const hoverBlocks = section.querySelectorAll(".ea-step-content, .ea-principle-card, .ea-mini-stat");
+      hoverBlocks.forEach((item) => {
+        item.addEventListener("mousemove", (e) => {
+          if (window.innerWidth < 992) return;
+          const rect = item.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          const rotateY = ((x / rect.width) - 0.5) * 6;
+          const rotateX = ((y / rect.height) - 0.5) * -4;
+          item.style.transform = `translateY(-4px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        });
+
+        item.addEventListener("mouseleave", () => {
+          item.style.transform = "";
+        });
+      });
+    });
+  </script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="dept-immersive-section" id="departments">
+  <div class="dept-immersive-bg bg-one"></div>
+  <div class="dept-immersive-bg bg-two"></div>
+  <div class="dept-immersive-grid"></div>
+
+  <div class="dept-immersive-layout">
+    <div class="dept-immersive-header di-reveal">
+      <span class="dept-immersive-kicker">
+        <i class="bi bi-diagram-3-fill"></i>
+        Departments
+      </span>
+
+      <h2 class="dept-immersive-title">
+        Academic <span>ecosystem</span> of learning
+      </h2>
+
+      <p class="dept-immersive-subtitle">
+        At Bright Future Academy, Mathematics, Science, and Language work together
+        to shape clear thinking, curiosity, and confident expression.
+      </p>
+    </div>
+
+    <div class="dept-immersive-stage" id="deptImmersiveStage">
+      <div class="dept-center-core di-reveal">
+        <div class="dept-core-glow"></div>
+        <div class="dept-core-ring ring-one"></div>
+        <div class="dept-core-ring ring-two"></div>
+        <div class="dept-core-box">
+          <span>ABC</span>
+          <strong>Departments</strong>
+          <small>Connected Learning</small>
+        </div>
+      </div>
+
+      <article class="dept-planet dept-mathematics di-reveal" tabindex="0">
+        <div class="dept-planet-orbit"></div>
+        <div class="dept-planet-dot"></div>
+        <div class="dept-planet-card">
+          <div class="dept-planet-icon">
+            <i class="bi bi-calculator-fill"></i>
+          </div>
+          <small>01</small>
+          <h3>Mathematics</h3>
+          <p>
+            Developing logic, accuracy, analytical thinking, and confident problem-solving.
+          </p>
+        </div>
+      </article>
+
+      <article class="dept-planet dept-science di-reveal" tabindex="0">
+        <div class="dept-planet-orbit"></div>
+        <div class="dept-planet-dot accent"></div>
+        <div class="dept-planet-card">
+          <div class="dept-planet-icon accent">
+            <i class="bi bi-flask-fill"></i>
+          </div>
+          <small>02</small>
+          <h3>Science</h3>
+          <p>
+            Encouraging discovery, observation, experimentation, and real-world understanding.
+          </p>
+        </div>
+      </article>
+
+      <article class="dept-planet dept-language di-reveal" tabindex="0">
+        <div class="dept-planet-orbit"></div>
+        <div class="dept-planet-dot"></div>
+        <div class="dept-planet-card">
+          <div class="dept-planet-icon">
+            <i class="bi bi-chat-square-text-fill"></i>
+          </div>
+          <small>03</small>
+          <h3>Language</h3>
+          <p>
+            Strengthening reading, writing, communication, and creative expression.
+          </p>
+        </div>
+      </article>
+
+      <div class="dept-floating-pill pill-one">
+        <i class="bi bi-lightbulb-fill"></i>
+        <span>Concept Clarity</span>
+      </div>
+
+      <div class="dept-floating-pill pill-two">
+        <i class="bi bi-stars"></i>
+        <span>Creative Learning</span>
+      </div>
+
+      <div class="dept-floating-pill pill-three">
+        <i class="bi bi-graph-up-arrow"></i>
+        <span>Skill Building</span>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    :root {
+      --school-primary: #123c7a;
+      --school-primary-dark: #0d2c5d;
+      --school-secondary: #1d65c1;
+      --school-accent: #f4b942;
+      --school-bg: #f4f8fc;
+      --school-surface: #ffffff;
+      --school-border: #dbe5f0;
+      --school-text: #1b2b45;
+      --school-muted: #6b7a90;
+      --school-shadow: 0 16px 50px rgba(10, 31, 68, 0.12);
+      --school-shadow-soft: 0 10px 30px rgba(18, 60, 122, 0.08);
+      --transition-base: all 0.3s ease;
+    }
+
+    .dept-immersive-section {
+      position: relative;
+      overflow: hidden;
+      padding: 110px 24px;
+      background:
+        radial-gradient(circle at 12% 14%, rgba(29, 101, 193, 0.09), transparent 18%),
+        radial-gradient(circle at 88% 18%, rgba(244, 185, 66, 0.14), transparent 20%),
+        linear-gradient(180deg, #ffffff 0%, var(--school-bg) 100%);
+      isolation: isolate;
+    }
+
+    .dept-immersive-bg {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(18px);
+      pointer-events: none;
+      z-index: 0;
+      animation: diFloat 10s ease-in-out infinite;
+    }
+
+    .dept-immersive-bg.bg-one {
+      width: 360px;
+      height: 360px;
+      left: -120px;
+      top: 40px;
+      background: radial-gradient(circle, rgba(29, 101, 193, 0.16), transparent 72%);
+    }
+
+    .dept-immersive-bg.bg-two {
+      width: 340px;
+      height: 340px;
+      right: -110px;
+      bottom: 10px;
+      background: radial-gradient(circle, rgba(244, 185, 66, 0.18), transparent 72%);
+      animation-delay: -3s;
+    }
+
+    .dept-immersive-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(18, 60, 122, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(18, 60, 122, 0.03) 1px, transparent 1px);
+      background-size: 28px 28px;
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,0.16), transparent 88%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .dept-immersive-layout {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+    }
+
+    .dept-immersive-header {
+      max-width: 760px;
+      margin: 0 auto 48px;
+      text-align: center;
+    }
+
+    .dept-immersive-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: rgba(244, 185, 66, 0.12);
+      color: #a87514;
+      border: 1px solid rgba(244, 185, 66, 0.22);
+      font-weight: 700;
+      font-size: 0.92rem;
+      margin-bottom: 1rem;
+      box-shadow: var(--school-shadow-soft);
+      backdrop-filter: blur(10px);
+    }
+
+    .dept-immersive-title {
+      margin: 0 0 14px;
+      font-size: clamp(2.2rem, 5vw, 4.6rem);
+      line-height: 0.98;
+      letter-spacing: -0.05em;
+      font-weight: 800;
+      color: var(--school-text);
+    }
+
+    .dept-immersive-title span {
+      background: linear-gradient(135deg, var(--school-primary), var(--school-secondary), var(--school-accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .dept-immersive-subtitle {
+      max-width: 680px;
+      margin: 0 auto;
+      color: var(--school-muted);
+      line-height: 1.85;
+      font-size: 1rem;
+    }
+
+    .dept-immersive-stage {
+      position: relative;
+      width: 100%;
+      min-height: 820px;
+      border-radius: 42px;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.42), rgba(255,255,255,0.18));
+      border: 1px solid rgba(255,255,255,0.62);
+      box-shadow: var(--school-shadow);
+      backdrop-filter: blur(12px);
+      overflow: hidden;
+    }
+
+    .dept-center-core {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 320px;
+      height: 320px;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+
+    .dept-core-glow {
+      position: absolute;
+      inset: 40px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(29,101,193,0.16), rgba(244,185,66,0.10), transparent 72%);
+      filter: blur(18px);
+    }
+
+    .dept-core-ring {
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid rgba(29,101,193,0.12);
+      animation: diRotate 16s linear infinite;
+    }
+
+    .dept-core-ring.ring-one {
+      inset: 0;
+    }
+
+    .dept-core-ring.ring-two {
+      inset: 22px;
+      border-style: dashed;
+      border-color: rgba(244,185,66,0.22);
+      animation-duration: 14s;
+      animation-direction: reverse;
+    }
+
+    .dept-core-box {
+      position: absolute;
+      inset: 64px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, rgba(18,60,122,0.96), rgba(29,101,193,0.92));
+      border: 5px solid rgba(255,255,255,0.82);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      box-shadow: 0 24px 50px rgba(18, 60, 122, 0.22);
+      animation: diPulse 5s ease-in-out infinite;
+    }
+
+    .dept-core-box span {
+      font-size: 0.8rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      opacity: 0.78;
+    }
+
+    .dept-core-box strong {
+      font-size: 1.45rem;
+      line-height: 1.1;
+      margin: 4px 0;
+      font-weight: 800;
+    }
+
+    .dept-core-box small {
+      font-size: 0.8rem;
+      opacity: 0.84;
+    }
+
+    .dept-planet {
+      position: absolute;
+      z-index: 3;
+    }
+
+    .dept-mathematics {
+      left: 7%;
+      top: 10%;
+      width: 340px;
+      height: 240px;
+    }
+
+    .dept-science {
+      right: 6%;
+      top: 28%;
+      width: 340px;
+      height: 240px;
+    }
+
+    .dept-language {
+      left: 18%;
+      bottom: 8%;
+      width: 340px;
+      height: 240px;
+    }
+
+    .dept-planet-orbit {
+      position: absolute;
+      inset: 0;
+      border-radius: 999px;
+      border: 1px dashed rgba(29,101,193,0.12);
+      transform: rotate(-10deg);
+    }
+
+    .dept-planet-dot {
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--school-surface);
+      border: 4px solid var(--school-secondary);
+      box-shadow: 0 10px 20px rgba(29,101,193,0.16);
+    }
+
+    .dept-planet-dot.accent {
+      border-color: var(--school-accent);
+    }
+
+    .dept-mathematics .dept-planet-dot {
+      right: 22px;
+      top: 16px;
+    }
+
+    .dept-science .dept-planet-dot {
+      left: 18px;
+      bottom: 18px;
+    }
+
+    .dept-language .dept-planet-dot {
+      right: 30px;
+      bottom: 20px;
+    }
+
+    .dept-planet-card {
+      position: absolute;
+      inset: 26px;
+      padding: 22px 20px;
+      border-radius: 28px;
+      background: rgba(255,255,255,0.9);
+      border: 1px solid rgba(255,255,255,0.98);
+      box-shadow: var(--school-shadow-soft);
+      backdrop-filter: blur(12px);
+      transition: var(--transition-base);
+      overflow: hidden;
+    }
+
+    .dept-planet-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,0.24), transparent 35%, transparent 70%, rgba(255,255,255,0.08));
+      pointer-events: none;
+    }
+
+    .dept-planet:hover .dept-planet-card {
+      transform: translateY(-10px);
+      box-shadow: 0 24px 50px rgba(10, 31, 68, 0.12);
+    }
+
+    .dept-planet-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--school-primary), var(--school-secondary));
+      color: #fff;
+      font-size: 1.2rem;
+      box-shadow: 0 12px 24px rgba(29,101,193,0.16);
+      margin-bottom: 16px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .dept-planet-icon.accent {
+      background: linear-gradient(135deg, var(--school-accent), #f0a81f);
+      color: var(--school-primary-dark);
+      box-shadow: 0 12px 24px rgba(244,185,66,0.22);
+    }
+
+    .dept-planet-card small {
+      display: block;
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(27,43,69,0.42);
+      font-weight: 700;
+      margin-bottom: 6px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .dept-planet-card h3 {
+      margin: 0 0 8px;
+      font-size: 1.3rem;
+      line-height: 1.1;
+      font-weight: 800;
+      color: var(--school-text);
+      position: relative;
+      z-index: 1;
+    }
+
+    .dept-planet-card p {
+      margin: 0;
+      color: var(--school-muted);
+      line-height: 1.75;
+      font-size: 0.94rem;
+      position: relative;
+      z-index: 1;
+      max-width: 250px;
+    }
+
+    .dept-floating-pill {
+      position: absolute;
+      z-index: 2;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 16px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.9);
+      border: 1px solid rgba(255,255,255,0.98);
+      box-shadow: var(--school-shadow-soft);
+      backdrop-filter: blur(12px);
+      color: var(--school-text);
+      font-size: 0.88rem;
+      font-weight: 700;
+      animation: diPillFloat 5.5s ease-in-out infinite;
+    }
+
+    .dept-floating-pill i {
+      color: var(--school-primary);
+      font-size: 1rem;
+    }
+
+    .pill-one {
+      top: 4%;
+      right: 8%;
+    }
+
+    .pill-two {
+      right: 12%;
+      bottom: 10%;
+      animation-delay: -1.3s;
+    }
+
+    .pill-three {
+      left: 8%;
+      bottom: 28%;
+      animation-delay: -2.1s;
+    }
+
+    .di-reveal {
+      opacity: 0;
+      transform: translateY(34px);
+      transition: opacity 0.9s ease, transform 0.9s ease;
+    }
+
+    .di-reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes diFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-18px); }
+    }
+
+    @keyframes diRotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes diPulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    @keyframes diPillFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    @media (max-width: 1199.98px) {
+      .dept-mathematics,
+      .dept-science,
+      .dept-language {
+        width: 300px;
+      }
+    }
+
+    @media (max-width: 991.98px) {
+      .dept-immersive-section {
+        padding: 82px 16px;
+      }
+
+      .dept-immersive-stage {
+        min-height: auto;
+        padding: 32px 16px 18px;
+      }
+
+      .dept-center-core {
+        position: relative;
+        left: auto;
+        top: auto;
+        transform: none;
+        margin: 0 auto 24px;
+        width: 280px;
+        height: 280px;
+      }
+
+      .dept-planet {
+        position: relative;
+        width: 100%;
+        height: auto;
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+        bottom: auto !important;
+        margin-bottom: 16px;
+      }
+
+      .dept-planet-orbit,
+      .dept-floating-pill {
+        display: none;
+      }
+
+      .dept-planet-dot {
+        top: 18px !important;
+        right: 18px !important;
+        left: auto !important;
+        bottom: auto !important;
+      }
+
+      .dept-planet-card {
+        position: relative;
+        inset: auto;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .dept-immersive-section {
+        padding: 68px 12px;
+      }
+
+      .dept-immersive-title {
+        font-size: clamp(1.9rem, 8vw, 3rem);
+      }
+
+      .dept-immersive-subtitle,
+      .dept-spectrum-text {
+        font-size: 0.96rem;
+        line-height: 1.8;
+      }
+
+      .dept-immersive-stage {
+        border-radius: 26px;
+      }
+
+      .dept-center-core {
+        width: 240px;
+        height: 240px;
+      }
+
+      .dept-core-box {
+        inset: 50px;
+      }
+
+      .dept-core-box strong {
+        font-size: 1.15rem;
+      }
+
+      .dept-planet-card {
+        padding: 18px 16px;
+        border-radius: 22px;
+      }
+
+      .dept-planet-card p {
+        max-width: none;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .dept-immersive-bg,
+      .dept-core-ring,
+      .dept-core-box,
+      .dept-floating-pill,
+      .di-reveal {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const section = document.getElementById("departments");
+      if (!section) return;
+
+      const reveals = section.querySelectorAll(".di-reveal");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+          if (entry.isIntersecting) {
+            entry.target.style.transitionDelay = `${index * 90}ms`;
+            entry.target.classList.add("is-visible");
+          }
+        });
+      }, { threshold: 0.15 });
+
+      reveals.forEach((item) => observer.observe(item));
+
+      const stage = document.getElementById("deptImmersiveStage");
+      if (stage && window.innerWidth > 991) {
+        stage.addEventListener("mousemove", (e) => {
+          const rect = stage.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          const moveX = (x / rect.width - 0.5) * 12;
+          const moveY = (y / rect.height - 0.5) * 10;
+
+          const core = stage.querySelector(".dept-center-core");
+          core.style.transform = `translate(-50%, -50%) rotateX(${-moveY * 0.4}deg) rotateY(${moveX * 0.5}deg)`;
+
+          stage.querySelectorAll(".dept-floating-pill").forEach((pill, i) => {
+            const depth = (i + 1) * 0.9;
+            pill.style.transform = `translate(${moveX * depth}px, ${moveY * depth}px)`;
+          });
+        });
+
+        stage.addEventListener("mouseleave", () => {
+          const core = stage.querySelector(".dept-center-core");
+          core.style.transform = "translate(-50%, -50%)";
+          stage.querySelectorAll(".dept-floating-pill").forEach((pill) => {
+            pill.style.transform = "";
+          });
+        });
+      }
+    });
+  </script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</section>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="school-footer-section" id="footer">
+  <div class="school-footer-shape shape-1"></div>
+  <div class="school-footer-shape shape-2"></div>
+  <div class="school-footer-grid"></div>
+
+  <div class="container position-relative">
+    <!-- Top CTA Strip -->
+    <div class="school-footer-cta">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-8">
+          <div class="school-footer-cta-content">
+            <span class="school-footer-cta-badge">
+              <i class="bi bi-mortarboard-fill"></i>
+              Join Our School Community
+            </span>
+            <h2>Empowering Young Minds with Excellence, Values, and Innovation</h2>
+            <p>
+              Connect with us for admissions, campus visits, academic details, and student support.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="school-footer-cta-action">
+            <a href="#contactUs" class="school-footer-cta-btn">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Footer -->
+    <div class="row gy-5 school-footer-main">
+      <div class="col-lg-4 col-md-6">
+        <div class="school-footer-brand">
+          <a href="#" class="school-footer-logo">
+            <span class="school-footer-logo-icon">
+              <i class="bi bi-buildings-fill"></i>
+            </span>
+            <div>
+              <strong>Bright Future Academy</strong>
+              <small>Learn • Lead • Inspire</small>
+            </div>
+          </a>
+
+          <p class="school-footer-about">
+            We provide a safe, inspiring, and future-ready environment where students grow through academic excellence, creativity, discipline, and strong values.
+          </p>
+
+          <div class="school-footer-socials">
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-6 col-6">
+        <div class="school-footer-widget">
+          <h5>Quick Links</h5>
+          <ul class="school-footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#admissionProcess">Admissions</a></li>
+            <li><a href="#photoGallery">Gallery</a></li>
+            <li><a href="#faqs">FAQs</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-6 col-6">
+        <div class="school-footer-widget">
+          <h5>Programs</h5>
+          <ul class="school-footer-links">
+            <li><a href="#">Pre-Primary</a></li>
+            <li><a href="#">Primary</a></li>
+            <li><a href="#">Middle School</a></li>
+            <li><a href="#">Secondary</a></li>
+            <li><a href="#">Activities</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="school-footer-widget">
+          <h5>Contact Info</h5>
+
+          <div class="school-footer-contact-list">
+            <div class="school-footer-contact-item">
+              <span class="icon"><i class="bi bi-geo-alt-fill"></i></span>
+              <div>
+                <strong>Address</strong>
+                <p>Aurangabad, Maharashtra, India</p>
+              </div>
+            </div>
+
+            <div class="school-footer-contact-item">
+              <span class="icon"><i class="bi bi-telephone-fill"></i></span>
+              <div>
+                <strong>Phone</strong>
+                <p>+91 98765 43210</p>
+              </div>
+            </div>
+
+            <div class="school-footer-contact-item">
+              <span class="icon"><i class="bi bi-envelope-fill"></i></span>
+              <div>
+                <strong>Email</strong>
+                <p>info@yourschool.com</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contactUs" class="school-footer-contact-btn">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Footer -->
+    <div class="school-footer-bottom">
+      <div class="row gy-3 align-items-center">
+        <div class="col-md-6">
+          <p class="mb-0">© 2026 Bright Future Academy. All Rights Reserved.</p>
+        </div>
+        <div class="col-md-6">
+          <div class="school-footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Support</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<style>
+  :root {
+  --school-primary: #123c7a;
+  --school-primary-dark: #0d2c5d;
+  --school-secondary: #1d65c1;
+  --school-accent: #f4b942;
+  --school-bg: #f4f8fc;
+  --school-surface: #ffffff;
+  --school-border: #dbe5f0;
+  --school-text: #1b2b45;
+  --school-muted: #6b7a90;
+  --school-shadow: 0 16px 50px rgba(10, 31, 68, 0.12);
+  --school-shadow-soft: 0 10px 30px rgba(18, 60, 122, 0.08);
+  --school-radius: 18px;
+  --transition-base: all 0.3s ease;
+}
+
+.school-footer-section {
+  position: relative;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.86);
+  background:
+    radial-gradient(circle at top left, rgba(244, 185, 66, 0.10), transparent 25%),
+    radial-gradient(circle at bottom right, rgba(29, 101, 193, 0.16), transparent 28%),
+    linear-gradient(135deg, #081c3b 0%, var(--school-primary-dark) 40%, var(--school-primary) 100%);
+  padding-top: 110px;
+}
+
+.school-footer-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,0.85), transparent 95%);
+  pointer-events: none;
+}
+
+.school-footer-shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(12px);
+  pointer-events: none;
+}
+
+.school-footer-shape.shape-1 {
+  width: 300px;
+  height: 300px;
+  top: -120px;
+  left: -100px;
+  background: radial-gradient(circle, rgba(244, 185, 66, 0.18), transparent 70%);
+  animation: footerFloat 10s ease-in-out infinite;
+}
+
+.school-footer-shape.shape-2 {
+  width: 280px;
+  height: 280px;
+  right: -90px;
+  bottom: -90px;
+  background: radial-gradient(circle, rgba(29, 101, 193, 0.2), transparent 70%);
+  animation: footerFloat 12s ease-in-out infinite reverse;
+}
+
+/* CTA */
+.school-footer-cta {
+  position: relative;
+  z-index: 2;
+  margin-top: -60px;
+  margin-bottom: 70px;
+  padding: 2rem;
+  border-radius: 30px;
+  background: rgba(255,255,255,0.10);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.14);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.16);
+}
+
+.school-footer-cta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: rgba(244, 185, 66, 0.14);
+  color: var(--school-accent);
+  border: 1px solid rgba(244, 185, 66, 0.20);
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.school-footer-cta-content h2 {
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  line-height: 1.12;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0.8rem;
+  max-width: 760px;
+}
+
+.school-footer-cta-content p {
+  margin: 0;
+  color: rgba(255,255,255,0.78);
+  line-height: 1.8;
+  max-width: 650px;
+}
+
+.school-footer-cta-action {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+.school-footer-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 190px;
+  padding: 15px 28px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 800;
+  color: var(--school-primary-dark);
+  background: linear-gradient(135deg, var(--school-accent), #ffd36a);
+  box-shadow: 0 18px 34px rgba(244, 185, 66, 0.22);
+  transition: var(--transition-base);
+}
+
+.school-footer-cta-btn:hover,
+.school-footer-cta-btn:focus {
+  color: var(--school-primary-dark);
+  transform: translateY(-4px);
+  box-shadow: 0 24px 42px rgba(244, 185, 66, 0.28);
+}
+
+/* Main */
+.school-footer-main {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 3rem;
+}
+
+.school-footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  margin-bottom: 1.25rem;
+}
+
+.school-footer-logo-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, var(--school-accent), #ffd36a);
+  color: var(--school-primary-dark);
+  font-size: 1.45rem;
+  box-shadow: 0 12px 24px rgba(244, 185, 66, 0.20);
+}
+
+.school-footer-logo strong {
+  display: block;
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.school-footer-logo small {
+  display: block;
+  color: rgba(255,255,255,0.66);
+  margin-top: 2px;
+}
+
+.school-footer-about {
+  color: rgba(255,255,255,0.72);
+  line-height: 1.85;
+  max-width: 420px;
+  margin-bottom: 1.4rem;
+}
+
+.school-footer-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.school-footer-socials a {
+  width: 46px;
+  height: 46px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.12);
+  transition: var(--transition-base);
+}
+
+.school-footer-socials a:hover {
+  background: linear-gradient(135deg, var(--school-accent), #ffd36a);
+  color: var(--school-primary-dark);
+  transform: translateY(-4px);
+}
+
+.school-footer-widget h5 {
+  color: #fff;
+  font-size: 1.08rem;
+  font-weight: 800;
+  margin-bottom: 1.25rem;
+  position: relative;
+}
+
+.school-footer-widget h5::after {
+  content: "";
+  display: block;
+  width: 46px;
+  height: 3px;
+  margin-top: 10px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--school-accent), rgba(255,255,255,0.15));
+}
+
+.school-footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.school-footer-links li + li {
+  margin-top: 12px;
+}
+
+.school-footer-links a {
+  text-decoration: none;
+  color: rgba(255,255,255,0.72);
+  transition: var(--transition-base);
+  position: relative;
+}
+
+.school-footer-links a:hover {
+  color: var(--school-accent);
+  padding-left: 6px;
+}
+
+.school-footer-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.school-footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.10);
+}
+
+.school-footer-contact-item .icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: rgba(244, 185, 66, 0.14);
+  color: var(--school-accent);
+  flex-shrink: 0;
+}
+
+.school-footer-contact-item strong {
+  display: block;
+  color: #fff;
+  font-size: 0.96rem;
+  margin-bottom: 2px;
+}
+
+.school-footer-contact-item p {
+  margin: 0;
+  color: rgba(255,255,255,0.70);
+  line-height: 1.6;
+}
+
+.school-footer-contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.25rem;
+  padding: 13px 24px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, var(--school-secondary), var(--school-primary));
+  transition: var(--transition-base);
+  box-shadow: var(--school-shadow-soft);
+}
+
+.school-footer-contact-btn:hover {
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* Bottom */
+.school-footer-bottom {
+  position: relative;
+  z-index: 2;
+  padding: 1.4rem 0 1.8rem;
+  border-top: 1px solid rgba(255,255,255,0.10);
+}
+
+.school-footer-bottom p {
+  color: rgba(255,255,255,0.66);
+}
+
+.school-footer-bottom-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: flex-end;
+}
+
+.school-footer-bottom-links a {
+  text-decoration: none;
+  color: rgba(255,255,255,0.68);
+  transition: var(--transition-base);
+}
+
+.school-footer-bottom-links a:hover {
+  color: var(--school-accent);
+}
+
+@keyframes footerFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(16px); }
+}
+
+@media (max-width: 991.98px) {
+  .school-footer-section {
+    padding-top: 90px;
+  }
+
+  .school-footer-cta {
+    margin-top: -40px;
+  }
+
+  .school-footer-cta,
+  .school-footer-main,
+  .school-footer-bottom {
+    text-align: center;
+  }
+
+  .school-footer-cta-action,
+  .school-footer-bottom-links {
+    justify-content: center;
+  }
+
+  .school-footer-about {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .school-footer-socials {
+    justify-content: center;
+  }
+
+  .school-footer-contact-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .school-footer-section {
+    padding-top: 80px;
+  }
+
+  .school-footer-cta {
+    padding: 1.4rem;
+    border-radius: 24px;
+    margin-bottom: 50px;
+  }
+
+  .school-footer-cta-btn,
+  .school-footer-contact-btn {
+    width: 100%;
+  }
+
+  .school-footer-bottom-links {
+    gap: 12px;
+  }
+
+  .school-footer-contact-item {
+    text-align: left;
+  }
+}
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const footerButtons = document.querySelectorAll(
+      ".school-footer-cta-btn, .school-footer-contact-btn, .school-footer-socials a"
+    );
+
+    footerButtons.forEach((btn) => {
+      btn.addEventListener("mouseenter", function () {
+        this.style.transform = "translateY(-4px)";
+      });
+
+      btn.addEventListener("mouseleave", function () {
+        this.style.transform = "";
+      });
+    });
+  });
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
